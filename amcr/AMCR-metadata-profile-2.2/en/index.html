@@ -14,7 +14,7 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
+      "hasArtifact": "",
       "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
@@ -46,12 +46,11 @@
           ],
           "hasResource": [
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#dsv",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./dsv.ttl",
+              "hasArtifact": "../dsv.ttl",
               "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": [
@@ -60,23 +59,21 @@
               ]
             },
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#shacl",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./shacl.ttl",
+              "hasArtifact": "../shacl.ttl",
               "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "https://www.w3.org/TR/shacl/"
             },
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#548a4f1f-a785-4dec-ad6d-708422cff13e",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./548a4f1f-a785-4dec-ad6d-708422cff13e.svg",
+              "hasArtifact": "../548a4f1f-a785-4dec-ad6d-708422cff13e.svg",
               "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
@@ -88,7 +85,7 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
+              "hasArtifact": "",
               "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
@@ -274,9 +271,9 @@
     <section>
       <h2>Overview</h2>
 
-        <a href="./548a4f1f-a785-4dec-ad6d-708422cff13e.svg">
+        <a href="../548a4f1f-a785-4dec-ad6d-708422cff13e.svg">
           <figure>
-            <img src="./548a4f1f-a785-4dec-ad6d-708422cff13e.svg" alt="View for AMCR metadata profile v2.2" />
+            <img src="../548a4f1f-a785-4dec-ad6d-708422cff13e.svg" alt="View for AMCR metadata profile v2.2" />
             <figcaption>View for AMCR metadata profile v2.2</figcaption>
           </figure>
         </a>
@@ -345,7 +342,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pristupnost.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.pristupnost"></a></li>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.pristupnost"></a></li>
@@ -477,7 +477,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#aktivita.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#komponenta"></a> → <a href="#komponenta.aktivita"></a></li>
               </ul>
@@ -612,7 +615,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#areal.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#komponenta"></a> → <a href="#komponenta.areal"></a></li>
               </ul>
@@ -738,6 +744,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#areal_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="areal_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -860,7 +869,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#vedouci_akce_ostatni.id">ID</a>, <a href="#vedouci_akce_ostatni.vedouci">Manager</a>, <a href="#vedouci_akce_ostatni.organizace">Organisation</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.vedouci_akce_ostatni"></a></li>
               </ul>
@@ -1096,7 +1108,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#letiste.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#let"></a> → <a href="#let.letiste_start"></a></li>
                   <li>from domain <a href="#let"></a> → <a href="#let.letiste_cil"></a></li>
@@ -1203,6 +1218,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#amcr.adb">Archaeological documentation point</a>, <a href="#amcr.archeologicky_zaznam">Archaeological record</a>, <a href="#amcr.ruian_katastr">Cadastral area</a>, <a href="#amcr.ruian_okres">District</a>, <a href="#amcr.dokument">Document</a>, <a href="#amcr.ext_zdroj">External source</a>, <a href="#amcr.let">Flight</a>, <a href="#amcr.samostatny_nalez">Individual find</a>, <a href="#amcr.organizace">Organisation</a>, <a href="#amcr.osoba">Person</a>, <a href="#amcr.projekt">Project</a>, <a href="#amcr.ruian_kraj">Region</a>, <a href="#amcr.pian">Spatial unit</a>, <a href="#amcr.uzivatel">User</a>, <a href="#amcr.heslo">Vocabulary term</a>.</p>
           
           
               <section id="amcr.adb">
@@ -2128,7 +2146,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#posudek_typ.equivalentclass">equivalentClass</a>, <a href="#posudek_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.posudek"></a></li>
               </ul>
@@ -2316,6 +2337,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#posudek_typ_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="posudek_typ_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -2438,7 +2462,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#oznamovatel.adresa">Address</a>, <a href="#oznamovatel.oznamovatel">Announcer</a>, <a href="#oznamovatel.odpovedna_osoba">Authorised person</a>, <a href="#oznamovatel.email">Email</a>, <a href="#oznamovatel.poznamka">Note</a>, <a href="#oznamovatel.telefon">Telephone</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.oznamovatel"></a></li>
               </ul>
@@ -2864,7 +2891,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#adb.pristupnost_pom">Accessibility</a>, <a href="#adb.autor_popisu">Author of description</a>, <a href="#adb.autor_revize">Author of revision</a>, <a href="#adb.dokumentacni_jednotka">Documentation unit</a>, <a href="#adb.ident_cely">ID</a>, <a href="#adb.podnet">Intervention motivation</a>, <a href="#adb.stratigraficke_jednotky">Number of stratigraphic units</a>, <a href="#adb.chranene_udaje">Protected data</a>, <a href="#adb.sm5">SM5 map sheet</a>, <a href="#adb.stav_pom">Status</a>, <a href="#adb.typ_sondy">Trench type</a>, <a href="#adb.rok_popisu">Year of description</a>, <a href="#adb.rok_revize">Year of revision</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.adb"></a></li>
                   <li>from domain <a href="#amcr"></a> → <a href="#amcr.adb"></a></li>
@@ -3680,7 +3710,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#archeologicky_zaznam.pristupnost">Accessibility</a>, <a href="#archeologicky_zaznam.okres">District</a>, <a href="#archeologicky_zaznam.dokument">Document</a>, <a href="#archeologicky_zaznam.dokumentacni_jednotka">Documentation unit</a>, <a href="#archeologicky_zaznam.ext_odkaz">External reference</a>, <a href="#archeologicky_zaznam.akce">Fieldwork event</a>, <a href="#archeologicky_zaznam.historie">History</a>, <a href="#archeologicky_zaznam.ident_cely">ID</a>, <a href="#archeologicky_zaznam.chranene_udaje">Protected data</a>, <a href="#archeologicky_zaznam.lokalita">Site</a>, <a href="#archeologicky_zaznam.stav">Status</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument_cast"></a> → <a href="#dokument_cast.archeologicky_zaznam"></a></li>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.archeologicky_zaznam"></a></li>
@@ -4385,7 +4418,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#autor.poradi">Order</a>, <a href="#autor.osoba">Person</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.autor"></a></li>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.autor"></a></li>
@@ -4564,7 +4600,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#hierarchie_nize.heslo_podrazene">Child term</a>, <a href="#hierarchie_nize.id">ID</a>, <a href="#hierarchie_nize.typ">Relation type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#heslo"></a> → <a href="#heslo.hierarchie_nize"></a></li>
               </ul>
@@ -4800,7 +4839,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#spoluprace_nadrizeni.historie">History</a>, <a href="#spoluprace_nadrizeni.id">ID</a>, <a href="#spoluprace_nadrizeni.vedouci">Manager</a>, <a href="#spoluprace_nadrizeni.stav">Status</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#uzivatel"></a> → <a href="#uzivatel.spoluprace_nadrizeni"></a></li>
               </ul>
@@ -5093,7 +5135,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#spoluprace_podrizeni.spolupracovnik">Collaborator</a>, <a href="#spoluprace_podrizeni.historie">History</a>, <a href="#spoluprace_podrizeni.id">ID</a>, <a href="#spoluprace_podrizeni.stav">Status</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#uzivatel"></a> → <a href="#uzivatel.spoluprace_podrizeni"></a></li>
               </ul>
@@ -5377,7 +5422,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#komponenta.aktivita">Activities</a>, <a href="#komponenta.areal">Activity area</a>, <a href="#komponenta.jistota">Certain dating</a>, <a href="#komponenta.nalez_objekt">Features</a>, <a href="#komponenta.ident_cely">ID</a>, <a href="#komponenta.poznamka">Note</a>, <a href="#komponenta.nalez_predmet">Objects</a>, <a href="#komponenta.obdobi">Period</a>, <a href="#komponenta.presna_datace">Precise dating</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument_cast"></a> → <a href="#dokument_cast.komponenta"></a></li>
                   <li>from domain <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.komponenta"></a></li>
@@ -5968,7 +6016,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#zeme.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#extra_data"></a> → <a href="#extra_data.zeme"></a></li>
               </ul>
@@ -6094,7 +6145,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#datum_specifikace.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.specifikace_data"></a></li>
               </ul>
@@ -6238,7 +6292,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#datace.poznamka">Note</a>, <a href="#Datace.rok_od_max">Year from (max)</a>, <a href="#datace.rok_od_min">Year from (min)</a>, <a href="#datace.rok_do_max">Year to (max)</a>, <a href="#datace.rok_do_min">Year to (min)</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#heslo"></a> → <a href="#heslo.datace"></a></li>
               </ul>
@@ -6450,7 +6507,7 @@
                     <td>
                       <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
               
-                          [0..1]
+                          [1..1]
               
                   </td>
                   </tr>
@@ -6592,7 +6649,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#nalezove_okolnosti.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.okolnosti"></a></li>
               </ul>
@@ -6713,7 +6773,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument.pristupnost">Accessibility</a>, <a href="#dokument.autor">Author</a>, <a href="#dokument.posudek">Contains analyses</a>, <a href="#dokument.popis">Description</a>, <a href="#dokument.dokument_cast">Document part</a>, <a href="#dokument.typ_dokumentu">Document type</a>, <a href="#dokument.osoba">Documented persons</a>, <a href="#dokument.doi">DOI</a>, <a href="#dokument.extra_data">Extended description</a>, <a href="#dokument.soubor">File</a>, <a href="#dokument.let">Flight</a>, <a href="#dokument.historie">History</a>, <a href="#dokument.ident_cely">ID</a>, <a href="#dokument.jazyk_dokumentu">Language</a>, <a href="#dokument.licence">Licence</a>, <a href="#dokument.ulozeni_originalu">Location of original</a>, <a href="#dokument.poznamka">Note</a>, <a href="#dokument.organizace">Organisation</a>, <a href="#dokument.oznaceni_originalu">Original label</a>, <a href="#dokument.material_originalu">Original material</a>, <a href="#dokument.datum_zverejneni">Publication date</a>, <a href="#dokument.rada">Series</a>, <a href="#dokument.tvar">Shape</a>, <a href="#dokument.stav">Status</a>, <a href="#dokument.rok_vzniku">Year of creation</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#let"></a> → <a href="#let.dokument"></a></li>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.dokument"></a></li>
@@ -8222,7 +8285,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_format.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#extra_data"></a> → <a href="#extra_data.format"></a></li>
               </ul>
@@ -8348,7 +8414,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_material.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument_typ_material_rada"></a> → <a href="#dokument_typ_material_rada.dokument_material"></a></li>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.material_originalu"></a></li>
@@ -8475,7 +8544,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_cast.archeologicky_zaznam">Archaeological record</a>, <a href="#dokument_cast.komponenta">Component</a>, <a href="#dokument_cast.ident_cely">ID</a>, <a href="#dokument_cast.poznamka">Note</a>, <a href="#dokument_cast.projekt">Project</a>, <a href="#dokument_cast.neident_akce">Unidentified fieldwork event</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.dokument_cast"></a></li>
               </ul>
@@ -8892,7 +8964,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_zachovalost.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#extra_data"></a> → <a href="#extra_data.zachovalost"></a></li>
               </ul>
@@ -9018,7 +9093,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_rada.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.rada"></a></li>
               </ul>
@@ -9144,7 +9222,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument_typ_material_rada"></a> → <a href="#dokument_typ_material_rada.dokument_typ"></a></li>
                   <li>from domain <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.typ_dokumentu"></a></li>
@@ -9281,7 +9362,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_typ_material_rada.dokument_material">Document material</a>, <a href="#dokument_typ_material_rada.dokument_typ">Document type</a>, <a href="#dokument_typ_material_rada.id">ID</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#heslo"></a> → <a href="#heslo.dokument_typ_material_rada"></a></li>
               </ul>
@@ -9517,7 +9601,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokumentacni_jednotka.adb">Archaeological documentation point</a>, <a href="#dokumentacni_jednotka.komponenta">Component</a>, <a href="#dokumentacni_jednotka.negativni_jednotka">Fieldwork results</a>, <a href="#dokumentacni_jednotka.ident_cely">ID</a>, <a href="#dokumentacni_jednotka.nazev">Name</a>, <a href="#dokumentacni_jednotka.pian">Spatial unit</a>, <a href="#dokumentacni_jednotka.typ">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.dokumentacni_jednotka"></a></li>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.dokumentacni_jednotka"></a></li>
@@ -9994,7 +10081,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dok_jednotka_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.typ"></a></li>
               </ul>
@@ -10120,7 +10210,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#letfoto_tvar.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#tvar"></a> → <a href="#tvar.tvar"></a></li>
               </ul>
@@ -10246,7 +10339,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#editor.poradi">Order</a>, <a href="#editor.osoba">Person</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.editor"></a></li>
               </ul>
@@ -10444,7 +10540,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#vyskovy_bod.typ">Documented level</a>, <a href="#vyskovy_bod.geom_gml">GML (EPSG:4326)</a>, <a href="#vyskovy_bod.ident_cely">ID</a>, <a href="#vyskovy_bod.geom_wkt">WKT (EPSG:4326)</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#chranene_udaje.adb"></a> → <a href="#adb.vyskovy_bod"></a></li>
               </ul>
@@ -10748,7 +10847,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#vyskovy_bod_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#vyskovy_bod"></a> → <a href="#vyskovy_bod.typ"></a></li>
               </ul>
@@ -10874,7 +10976,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#extra_data.geom_system">Coordinate system</a>, <a href="#extra_data.zeme">Country</a>, <a href="#extra_data.duveryhodnost">Credibility (%)</a>, <a href="#extra_data.datum_vzniku">Date created</a>, <a href="#extra_data.udalost">Documented event</a>, <a href="#extra_data.cislo_objektu">Feature/context</a>, <a href="#extra_data.format">Format</a>, <a href="#extra_data.geom_gml">GML (EPSG:4326)</a>, <a href="#extra_data.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#extra_data.odkaz">Link</a>, <a href="#extra_data.pocet_variant_originalu">Number of original variants</a>, <a href="#extra_data.vyska">Plan height (cm)</a>, <a href="#extra_data.meritko">Plan scale</a>, <a href="#extra_data.sirka">Plan width (cm)</a>, <a href="#extra_data.region">Region</a>, <a href="#extra_data.zachovalost">State of preservation</a>, <a href="#extra_data.nahrada">Substitution for original</a>, <a href="#extra_data.udalost_typ">Type of documented event</a>, <a href="#extra_data.geom_wkt">WKT (EPSG:4326)</a>, <a href="#extra_data.geom_sjtsk_wkt">WKT (EPSG:5514)</a>, <a href="#extra_data.rok_od">Year from</a>, <a href="#extra_data.rok_do">Year to</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.extra_data"></a></li>
               </ul>
@@ -12209,7 +12314,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ext_odkaz.ez.archeologicky_zaznam">Archaeological record</a>, <a href="#ext_odkaz.ez.id">ID</a>, <a href="#ext_odkaz.ez.paginace">Reference pagination</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.ext_odkaz"></a></li>
               </ul>
@@ -12446,7 +12554,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ext_odkaz.az.ext_zdroj">External source</a>, <a href="#ext_odkaz.az.id">ID</a>, <a href="#ext_odkaz.az.paginace">Reference pagination</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.ext_odkaz"></a></li>
               </ul>
@@ -12678,7 +12789,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ext_zdroj.paginace_titulu">Article pagination</a>, <a href="#ext_zdroj.autor">Author</a>, <a href="#ext_zdroj.datum_rd">Date of publication</a>, <a href="#ext_zdroj.typ_dokumentu">Document type</a>, <a href="#ext_zdroj.doi">DOI</a>, <a href="#ext_zdroj.edice_rada">Edition/series</a>, <a href="#ext_zdroj.editor">Editor</a>, <a href="#ext_zdroj.ext_odkaz">External reference</a>, <a href="#ext_zdroj.historie">History</a>, <a href="#ext_zdroj.ident_cely">ID</a>, <a href="#ext_zdroj.isbn">ISBN</a>, <a href="#ext_zdroj.issn">ISSN</a>, <a href="#ext_zdroj.casopis_denik_nazev">Journal/newspaper</a>, <a href="#ext_zdroj.link">Link</a>, <a href="#ext_zdroj.poznamka">Note</a>, <a href="#ext_zdroj.organizace">Organisation</a>, <a href="#ext_zdroj.misto">Place of publication</a>, <a href="#ext_zdroj.sbornik_nazev">Proceedings/book</a>, <a href="#ext_zdroj.vydavatel">Publisher</a>, <a href="#ext_zdroj.stav">Status</a>, <a href="#ext_zdroj.nazev">Title</a>, <a href="#ext_zdroj.typ">Type</a>, <a href="#ext_zdroj.casopis_rocnik">Volume</a>, <a href="#ext_zdroj.rok_vydani_vzniku">Year of publication</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ext_odkaz.az"></a> → <a href="#ext_odkaz.az.ext_zdroj"></a></li>
                   <li>from domain <a href="#amcr"></a> → <a href="#amcr.ext_zdroj"></a></li>
@@ -14138,7 +14252,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ext_zdroj_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.typ"></a></li>
               </ul>
@@ -14272,7 +14389,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#nalez_objekt.pocet">Count</a>, <a href="#nalez_objekt.id">ID</a>, <a href="#nalez_objekt.poznamka">Note</a>, <a href="#nalez_objekt.specifikace">Specification</a>, <a href="#nalez_objekt.druh">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#komponenta"></a> → <a href="#komponenta.nalez_objekt"></a></li>
               </ul>
@@ -14633,6 +14753,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#objekt_druh_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="objekt_druh_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -14773,7 +14896,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#objekt_specifikace.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#nalez_objekt"></a> → <a href="#nalez_objekt.specifikace"></a></li>
               </ul>
@@ -14907,6 +15033,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#objekt_specifikace_kat.equivalentclass">equivalentClass</a>.</p>
           
           
               <section id="objekt_specifikace_kat.equivalentclass">
@@ -15048,7 +15177,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#objekt_druh.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#nalez_objekt"></a> → <a href="#nalez_objekt.druh"></a></li>
               </ul>
@@ -15179,7 +15311,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#akce.vedouci_akce_ostatni">Additional managers</a>, <a href="#akce.specifikace_data">Date precision</a>, <a href="#akce.ulozeni_dokumentace">Documentation repository</a>, <a href="#akce.datum_ukonceni">End date</a>, <a href="#akce.ulozeni_nalezu">Finds repository</a>, <a href="#akce.hlavni_typ">Main type</a>, <a href="#akce.hlavni_vedouci">Manager</a>, <a href="#akce.organizace">Organisation</a>, <a href="#akce.projekt">Project</a>, <a href="#akce.propertydisjointwith">propertyDisjointWith</a>, <a href="#akce.chranene_udaje">Protected data</a>, <a href="#akce.odlozena_nz">Report postponed</a>, <a href="#akce.vedlejsi_typ">Secondary type</a>, <a href="#akce.datum_zahajeni">Start date</a>, <a href="#akce.je_nz">Substitutes report</a>, <a href="#akce.typ">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.akce"></a></li>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.propertydisjointwith"></a></li>
@@ -16177,7 +16312,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#akce_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.hlavni_typ"></a></li>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.vedlejsi_typ"></a></li>
@@ -16304,6 +16442,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#akce_typ_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="akce_typ_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -16416,7 +16557,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#soubor.sha_512">Checksum (SHA-512)</a>, <a href="#soubor.historie">File history</a>, <a href="#soubor.mimetype">File type (MIME)</a>, <a href="#soubor.id">ID</a>, <a href="#soubor.nazev">Name</a>, <a href="#soubor.rozsah">Number of pages</a>, <a href="#soubor.path">Path</a>, <a href="#soubor.size_mb">Size (MB)</a>, <a href="#soubor.url">URL</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.soubor"></a></li>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.soubor"></a></li>
@@ -17003,6 +17147,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#nalez_typ.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="nalez_typ.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -17120,7 +17267,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#let.typ_letounu">Aircraft type</a>, <a href="#let.fotoaparat">Camera</a>, <a href="#let.datum">Date</a>, <a href="#let.letiste_start">Departure airport</a>, <a href="#let.letiste_cil">Destination airport</a>, <a href="#let.dokument">Document</a>, <a href="#let.hodina_konec">End time</a>, <a href="#let.ident_cely">ID</a>, <a href="#let.pozorovatel">Observer</a>, <a href="#let.organizace">Organisation</a>, <a href="#let.pilot">Pilot</a>, <a href="#let.ucel_letu">Purpose of flight</a>, <a href="#let.hodina_zacatek">Start time</a>, <a href="#let.uzivatelske_oznaceni">User label</a>, <a href="#let.dohlednost">Visibility</a>, <a href="#let.pocasi">Weather</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.let"></a></li>
                   <li>from domain <a href="#amcr"></a> → <a href="#amcr.let"></a></li>
@@ -18105,7 +18255,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#historie.datum_zmeny">Date of change</a>, <a href="#historie.id">ID</a>, <a href="#historie.poznamka">Note</a>, <a href="#historie.typ_zmeny">Type of change</a>, <a href="#historie.uzivatel">User</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#soubor"></a> → <a href="#soubor.historie"></a></li>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.historie"></a></li>
@@ -18462,7 +18615,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#samostatny_nalez.pristupnost">Accessibility</a>, <a href="#samostatny_nalez.okolnosti">Context</a>, <a href="#samostatny_nalez.pocet">Count</a>, <a href="#samostatny_nalez.datum_nalezu">Date found</a>, <a href="#samostatny_nalez.hloubka">Depth (cm)</a>, <a href="#samostatny_nalez.okres">District</a>, <a href="#samostatny_nalez.soubor">File</a>, <a href="#samostatny_nalez.nalezce">Finder</a>, <a href="#samostatny_nalez.predano">Handed over</a>, <a href="#samostatny_nalez.predano_organizace">Handed over to organisation</a>, <a href="#samostatny_nalez.historie">History</a>, <a href="#samostatny_nalez.ident_cely">ID</a>, <a href="#samostatny_nalez.igsn">IGSN</a>, <a href="#samostatny_nalez.evidencni_cislo">Inventory number</a>, <a href="#samostatny_nalez.specifikace">Material</a>, <a href="#samostatny_nalez.poznamka">Note</a>, <a href="#samostatny_nalez.obdobi">Period</a>, <a href="#samostatny_nalez.presna_datace">Precise dating</a>, <a href="#samostatny_nalez.geom_system">Primary EPSG</a>, <a href="#samostatny_nalez.projekt">Project</a>, <a href="#samostatny_nalez.chranene_udaje">Protected data</a>, <a href="#samostatny_nalez.stav">Status</a>, <a href="#samostatny_nalez.druh_nalezu">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#amcr"></a> → <a href="#amcr.samostatny_nalez"></a></li>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.samostatny_nalez"></a></li>
@@ -19858,7 +20014,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#adb_podnet.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.podnet"></a></li>
               </ul>
@@ -19984,7 +20143,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#jazyk.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.jazyk_dokumentu"></a></li>
               </ul>
@@ -20110,7 +20272,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#jistota_urceni.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.jistota"></a></li>
               </ul>
@@ -20236,7 +20401,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_licence.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.licence"></a></li>
               </ul>
@@ -20362,7 +20530,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_ulozeni.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.ulozeni_originalu"></a></li>
               </ul>
@@ -20488,7 +20659,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#odkaz.kod">Code (ID)</a>, <a href="#odkaz.nazev_kodu">Code name/ID</a>, <a href="#odkaz.id">ID</a>, <a href="#odkaz.skos_mapping_relation">Relation type (SKOS)</a>, <a href="#odkaz.scheme_uri">Scheme URI</a>, <a href="#odkaz.zdroj">Source</a>, <a href="#odkaz.uri">URL</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#heslo"></a> → <a href="#heslo.odkaz"></a></li>
               </ul>
@@ -20958,7 +21132,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pamatkova_ochrana.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.kulturni_pamatka"></a></li>
               </ul>
@@ -21092,7 +21269,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#nalez_predmet.pocet">Count</a>, <a href="#nalez_predmet.id">ID</a>, <a href="#nalez_predmet.specifikace">Material</a>, <a href="#nalez_predmet.poznamka">Note</a>, <a href="#nalez_predmet.druh">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#komponenta"></a> → <a href="#komponenta.nalez_predmet"></a></li>
               </ul>
@@ -21453,6 +21633,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#predmet_druh_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="predmet_druh_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -21584,7 +21767,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#predmet_specifikace.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#nalez_predmet"></a> → <a href="#nalez_predmet.specifikace"></a></li>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.specifikace"></a></li>
@@ -21729,7 +21915,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#predmet_druh.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#nalez_predmet"></a> → <a href="#nalez_predmet.druh"></a></li>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.druh_nalezu"></a></li>
@@ -21851,7 +22040,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#organizace.zverejneni_pristupnost">Accessibility</a>, <a href="#organizace.adresa">Address</a>, <a href="#organizace.cteni_dokumentu">Allow reading archived documents</a>, <a href="#organizace.oao">Authorised</a>, <a href="#organizace.ico">Company ID</a>, <a href="#organizace.zanikla">Defunct</a>, <a href="#organizace.email">Email</a>, <a href="#organizace.ident_cely">ID</a>, <a href="#organizace.mesicu_do_zverejneni">Months until publication</a>, <a href="#organizace.nazev">Name</a>, <a href="#organizace.nazev_zkraceny">Name - shortened</a>, <a href="#organizace.nazev_zkraceny_en">Name - shortened (EN)</a>, <a href="#organizace.nazev_en">Name (EN)</a>, <a href="#organizace.soucast">Parent organisation</a>, <a href="#organizace.ror">ROR</a>, <a href="#organizace.telefon">Telephone</a>, <a href="#organizace.typ_organizace">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.predano_organizace"></a></li>
                   <li>from domain <a href="#let"></a> → <a href="#let.organizace"></a></li>
@@ -22915,7 +23107,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#organizace_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#organizace"></a> → <a href="#organizace.typ_organizace"></a></li>
               </ul>
@@ -23040,7 +23235,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#hierarchie_vyse.id">ID</a>, <a href="#hierarchie_vyse.heslo_nadrazene">Parent term</a>, <a href="#hierarchie_vyse.typ">Relation type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#heslo"></a> → <a href="#heslo.hierarchie_vyse"></a></li>
               </ul>
@@ -23286,7 +23484,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#obdobi.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#komponenta"></a> → <a href="#komponenta.obdobi"></a></li>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.obdobi"></a></li>
@@ -23413,6 +23614,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#obdobi_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="obdobi_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -23530,7 +23734,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#osoba.prijmeni">Family name</a>, <a href="#osoba.jmeno">Given name</a>, <a href="#osoba.ident_cely">ID</a>, <a href="#Osoba.vypis_cely">Label</a>, <a href="#osoba.vypis">Label - short</a>, <a href="#osoba.orcid">ORCID</a>, <a href="#osoba.rodne_prijmeni">Surname at birth</a>, <a href="#osoba.wikidata">Wikidata ID</a>, <a href="#osoba.rok_narozeni">Year of birth</a>, <a href="#osoba.rok_umrti">Year of death</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.autor_popisu"></a></li>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.autor_revize"></a></li>
@@ -24190,7 +24397,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#projekt.pristupnost_pom">Accessibility</a>, <a href="#projekt.oznamovatel">Announcer</a>, <a href="#projekt.archeologicky_zaznam">Archaeological record</a>, <a href="#projekt.oznaceni_stavby">Construction designation</a>, <a href="#projekt.geom_system">Coordinate system</a>, <a href="#projekt.okres">District</a>, <a href="#projekt.dokument">Document</a>, <a href="#projekt.datum_ukonceni">End date</a>, <a href="#projekt.soubor">File</a>, <a href="#projekt.historie">History</a>, <a href="#projekt.ident_cely">ID</a>, <a href="#projekt.samostatny_nalez">Individual finds</a>, <a href="#projekt.podnet">Intervention motivation</a>, <a href="#projekt.kulturni_pamatka">Monument protection</a>, <a href="#projekt.organizace">Organisation</a>, <a href="#projekt.planovane_zahajeni">Planned start date</a>, <a href="#projekt.vedouci_projektu">Project manager</a>, <a href="#projekt.chranene_udaje">Protected data</a>, <a href="#projekt.termin_odevzdani_nz">Report submission deadline</a>, <a href="#projekt.datum_zahajeni">Start date</a>, <a href="#projekt.stav">Status</a>, <a href="#projekt.typ_projektu">Type</a>, <a href="#projekt.uzivatelske_oznaceni">User label</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.okres"></a></li>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.projekt"></a></li>
@@ -25578,7 +25788,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#hlidaci_pes.katastr.katastr">Cadastral area</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.katastr"></a></li>
               </ul>
@@ -25689,7 +25902,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#hlidaci_pes.okres.okres">District</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.okres"></a></li>
               </ul>
@@ -25800,7 +26016,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#hlidaci_pes.kraj.kraj">Region</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.kraj"></a></li>
               </ul>
@@ -25921,7 +26140,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#projekt_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.typ_projektu"></a></li>
               </ul>
@@ -26075,7 +26297,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#adb.vyskovy_bod">Elevation point</a>, <a href="#adb.cislo_popisne">House number</a>, <a href="#adb.poznamka">Note</a>, <a href="#adb.parcelni_cislo">Parcel number</a>, <a href="#adb.trat">Street/track</a>, <a href="#adb.uzivatelske_oznaceni_sondy">User label</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.chranene_udaje"></a></li>
               </ul>
@@ -26495,7 +26720,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#archeologicky_zaznam.hlavni_katastr">Main cadastral area</a>, <a href="#archeologicky_zaznam.dalsi_katastr">Other cadastral areas</a>, <a href="#archeologicky_zaznam.uzivatelske_oznaceni">User label</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.chranene_udaje"></a></li>
               </ul>
@@ -26750,7 +26978,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#akce.lokalizace_okolnosti">Location/circumstances</a>, <a href="#akce.souhrn_upresneni">Summary/details</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.chranene_udaje"></a></li>
               </ul>
@@ -26939,7 +27170,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#samostatny_nalez.katastr">Cadastral area</a>, <a href="#samostatny_nalez.geom_gml">GML (EPSG:4326)</a>, <a href="#samostatny_nalez.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#samostatny_nalez.lokalizace">Location</a>, <a href="#samostatny_nalez.geom_wkt">WKT (EPSG:4326)</a>, <a href="#samostatny_nalez.geom_sjtsk_wkt">WKT (EPSG:5514)</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.chranene_udaje"></a></li>
               </ul>
@@ -27359,7 +27593,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#projekt.geom_gml">GML (EPSG:4326)</a>, <a href="#projekt.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#projekt.lokalizace">Location</a>, <a href="#projekt.hlavni_katastr">Main cadastral area</a>, <a href="#projekt.kulturni_pamatka_popis">Monument name</a>, <a href="#projekt.dalsi_katastr">Other cadastral areas</a>, <a href="#projekt.parcelni_cislo">Parcel number</a>, <a href="#projekt.kulturni_pamatka_cislo">ÚSKP registration number</a>, <a href="#projekt.geom_wkt">WKT (EPSG:4326)</a>, <a href="#projekt.geom_sjtsk_wkt">WKT (EPSG:5514)</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#projekt"></a> → <a href="#projekt.chranene_udaje"></a></li>
               </ul>
@@ -28020,7 +28257,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#lokalita.popis">Description</a>, <a href="#lokalita.nazev">Name</a>, <a href="#lokalita.poznamka">Note</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.chranene_udaje"></a></li>
               </ul>
@@ -28267,7 +28507,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pian.geom_gml">GML (EPSG:4326)</a>, <a href="#pian.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#pian.geom_wkt">WKT (EPSG:4326)</a>, <a href="#pian.geom_sjtsk_wkt">WKT (EPSG:5514)</a>, <a href="#pian.zm10">ZM10 map sheet</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#pian"></a> → <a href="#pian.chranene_udaje"></a></li>
               </ul>
@@ -28636,7 +28879,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ruian_katastr.hranice_gml">Boundary (GML)</a>, <a href="#ruian_katastr.hranice_wkt">Boundary (WKT)</a>, <a href="#ruian_katastr.definicni_bod_gml">Definition point (GML)</a>, <a href="#ruian_katastr.definicni_bod_wkt">Definition point (WKT)</a>, <a href="#ruian_katastr.okres">District</a>, <a href="#ruian_katastr.nazev">Name</a>, <a href="#ruian_katastr.kod">RÚIAN code</a>, <a href="#ruian_katastr.pian">Spatial unit</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#hlidaci_pes.katastr"></a> → <a href="#hlidaci_pes.katastr.katastr"></a></li>
                   <li>from domain <a href="#neident_akce"></a> → <a href="#neident_akce.katastr"></a></li>
@@ -29174,7 +29420,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ruian_okres.spz">Abbreviation</a>, <a href="#ruian_okres.hranice_gml">Boundary (GML)</a>, <a href="#ruian_okres.hranice_wkt">Boundary (WKT)</a>, <a href="#ruian_okres.definicni_bod_gml">Definition point (GML)</a>, <a href="#ruian_okres.definicni_bod_wkt">Definition point (WKT)</a>, <a href="#ruian_okres.nazev">Name</a>, <a href="#ruian_okres.nazev_en">Name (EN)</a>, <a href="#ruian_okres.kraj">Region</a>, <a href="#ruian_okres.kod">RÚIAN code</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ruian_katastr"></a> → <a href="#ruian_katastr.okres"></a></li>
                   <li>from domain <a href="#hlidaci_pes.okres"></a> → <a href="#hlidaci_pes.okres.okres"></a></li>
@@ -29759,7 +30008,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#ruian_kraj.hranice_gml">Boundary (GML)</a>, <a href="#ruian_kraj.hranice_wkt">Boundary (WKT)</a>, <a href="#ruian_kraj.definicni_bod_gml">Definition point (GML)</a>, <a href="#ruian_kraj.definicni_bod_wkt">Definition point (WKT)</a>, <a href="#ruian_kraj.email">Email for notifications</a>, <a href="#ruian_kraj.nazev">Name</a>, <a href="#ruian_kraj.nazev_en">Name (EN)</a>, <a href="#ruian_kraj.rada_id">Region</a>, <a href="#ruian_kraj.kod">RÚIAN code</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ruian_okres"></a> → <a href="#ruian_okres.kraj"></a></li>
                   <li>from domain <a href="#hlidaci_pes.kraj"></a> → <a href="#hlidaci_pes.kraj.kraj"></a></li>
@@ -30347,7 +30599,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#tvar.id">ID</a>, <a href="#tvar.poznamka">Note</a>, <a href="#tvar.tvar">Shape</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument"></a> → <a href="#dokument.tvar"></a></li>
               </ul>
@@ -30589,7 +30844,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#lokalita.igsn">IGSN</a>, <a href="#lokalita.jistota">Level of confidence</a>, <a href="#lokalita.propertydisjointwith">propertyDisjointWith</a>, <a href="#lokalita.chranene_udaje">Protected data</a>, <a href="#lokalita.druh">Site class</a>, <a href="#lokalita.zachovalost">State of preservation</a>, <a href="#lokalita.typ_lokality">Type</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#akce"></a> → <a href="#akce.propertydisjointwith"></a></li>
                   <li>from domain <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.lokalita"></a></li>
@@ -31068,6 +31326,9 @@
           
             </table>
           
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#lokalita_druh_kat.equivalentclass">equivalentClass</a>.</p>
+          
           
               <section id="lokalita_druh_kat.equivalentclass">
                 <h4>equivalentClass</h4>
@@ -31208,7 +31469,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#lokalita_druh.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.druh"></a></li>
               </ul>
@@ -31334,7 +31598,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#lokalita_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.typ_lokality"></a></li>
               </ul>
@@ -31455,7 +31722,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pian.pristupnost_pom">Accessibility</a>, <a href="#pian.presnost">Accuracy</a>, <a href="#pian.geom_system">Coordinate system</a>, <a href="#pian.dokumentacni_jednotka">Documentation unit</a>, <a href="#pian.historie">History</a>, <a href="#pian.ident_cely">ID</a>, <a href="#pian.chranene_udaje">Protected data</a>, <a href="#pian.typ">Spatial unit type</a>, <a href="#pian.stav">Status</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#ruian_katastr"></a> → <a href="#ruian_katastr.pian"></a></li>
                   <li>from domain <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.pian"></a></li>
@@ -32046,7 +32316,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pian_presnost.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#pian"></a> → <a href="#pian.presnost"></a></li>
               </ul>
@@ -32172,7 +32445,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pian_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#pian"></a> → <a href="#pian.typ"></a></li>
               </ul>
@@ -32298,7 +32574,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#stav_dochovani.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#lokalita"></a> → <a href="#lokalita.zachovalost"></a></li>
               </ul>
@@ -32424,7 +32703,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dokument_nahrada.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#extra_data"></a> → <a href="#extra_data.nahrada"></a></li>
               </ul>
@@ -32550,7 +32832,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#adb_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#adb"></a> → <a href="#adb.typ_sondy"></a></li>
               </ul>
@@ -32676,7 +32961,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#udalost_typ.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#extra_data"></a> → <a href="#extra_data.udalost_typ"></a></li>
               </ul>
@@ -32811,7 +33099,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#neident_akce.katastr">Cadastral area</a>, <a href="#neident_akce.popis">Description</a>, <a href="#neident_akce.okres">District</a>, <a href="#neident_akce.rok_ukonceni">End year</a>, <a href="#neident_akce.lokalizace">Location</a>, <a href="#neident_akce.vedouci">Manager</a>, <a href="#neident_akce.poznamka">Note</a>, <a href="#neident_akce.pian">Spatial unit</a>, <a href="#neident_akce.rok_zahajeni">Start year</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#dokument_cast"></a> → <a href="#dokument_cast.neident_akce"></a></li>
               </ul>
@@ -33399,7 +33690,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#uzivatel.aktivni">Active account</a>, <a href="#uzivatel.admin">Administrator</a>, <a href="#uzivatel.spoluprace_nadrizeni">Collaborations with archaeologists</a>, <a href="#uzivatel.spoluprace_podrizeni">Collaborations with researchers</a>, <a href="#uzivatel.datum_registrace">Date joined</a>, <a href="#uzivatel.email">Email</a>, <a href="#uzivatel.notifikace">Email notifications</a>, <a href="#uzivatel.prijmeni">Family name</a>, <a href="#uzivatel.jmeno">Given name</a>, <a href="#uzivatel.skupina">Groups</a>, <a href="#uzivatel.historie">History</a>, <a href="#uzivatel.ident_cely">ID</a>, <a href="#uzivatel.jazyk">Language</a>, <a href="#uzivatel.orcid">ORCID</a>, <a href="#uzivatel.organizace">Organisation</a>, <a href="#uzivatel.osoba">Person</a>, <a href="#uzivatel.hlidaci_pes.katastr">Project notifications</a>, <a href="#uzivatel.hlidaci_pes.okres">Project notifications</a>, <a href="#uzivatel.hlidaci_pes.kraj">Project notifications</a>, <a href="#uzivatel.superadmin">Superadmin</a>, <a href="#uzivatel.telefon">Telephone</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#spoluprace_podrizeni"></a> → <a href="#spoluprace_podrizeni.spolupracovnik"></a></li>
                   <li>from domain <a href="#spoluprace_nadrizeni"></a> → <a href="#spoluprace_nadrizeni.vedouci"></a></li>
@@ -34685,7 +34979,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#dohlednost.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#let"></a> → <a href="#let.dohlednost"></a></li>
               </ul>
@@ -34806,7 +35103,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#heslo.zkratka">Abbreviation</a>, <a href="#heslo.hierarchie_nize">Child terms</a>, <a href="#heslo.datace">Dating</a>, <a href="#heslo.popis">Description (CS)</a>, <a href="#heslo.popis_en">Description (EN)</a>, <a href="#heslo.dokument_typ_material_rada">Document type, material and series</a>, <a href="#heslo.ident_cely">ID</a>, <a href="#heslo.odkaz">Mapping</a>, <a href="#heslo.razeni">Ordering</a>, <a href="#heslo.hierarchie_vyse">Parent terms</a>, <a href="#heslo.heslo">Term</a>, <a href="#heslo.heslo_en">Term (EN)</a>, <a href="#heslo.nazev_heslare">Vocabulary title</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#hierarchie_nize"></a> → <a href="#hierarchie_nize.heslo_podrazene"></a></li>
                   <li>from domain <a href="#adb_podnet"></a> → <a href="#adb_podnet.equivalentclass"></a></li>
@@ -35681,7 +35981,10 @@
           
             </table>
           
-              <p>Backwards associations</p>
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#pocasi.equivalentclass">equivalentClass</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
               <ul>
                   <li>from domain <a href="#let"></a> → <a href="#let.pocasi"></a></li>
               </ul>
@@ -35764,7 +36067,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="attachments">
       <h2>Attachments</h2>
     
         <p>This specification includes the following attachments.</p>
@@ -35778,14 +36081,12 @@
         <tbody>
             <tr>
               <td>Application profile</td>
-              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+              <td><a href="../dsv.ttl">../dsv.ttl</a></td>
             </tr>
             <tr>
               <td>SHACL validation rules</td>
-              <td><a href="./shacl.ttl">./shacl.ttl</a></td>
+              <td><a href="../shacl.ttl">../shacl.ttl</a></td>
             </tr>
-            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
-            <tr><td>Conceptual diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>

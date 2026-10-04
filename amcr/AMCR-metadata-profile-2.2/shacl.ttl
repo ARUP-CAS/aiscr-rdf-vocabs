@@ -759,6 +759,7 @@
     sh:nodeKind sh:Literal;
     sh:path <https://amcr.aiscr.cz/schema#datace.rok_do_max>;
     sh:maxCount 1;
+    sh:minCount 1;
     sh:datatype xsd:integer.
 
 <https://amcr.aiscr.cz/schema/profile#schema:dataceShape> sh:property <https://amcr.aiscr.cz/schema/profile#schema:dataceShape/-5783c4f6>.

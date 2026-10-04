@@ -14,7 +14,7 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
+      "hasArtifact": "",
       "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
@@ -46,12 +46,11 @@
           ],
           "hasResource": [
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#dsv",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./dsv.ttl",
+              "hasArtifact": "../dsv.ttl",
               "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": [
@@ -60,23 +59,21 @@
               ]
             },
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#shacl",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./shacl.ttl",
+              "hasArtifact": "../shacl.ttl",
               "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "https://www.w3.org/TR/shacl/"
             },
             {
-              "@id": "https://amcr.aiscr.cz/schema/profile/#548a4f1f-a785-4dec-ad6d-708422cff13e",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./548a4f1f-a785-4dec-ad6d-708422cff13e.svg",
+              "hasArtifact": "../548a4f1f-a785-4dec-ad6d-708422cff13e.svg",
               "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
@@ -88,7 +85,7 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
+              "hasArtifact": "",
               "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
@@ -273,9 +270,9 @@
     <section>
       <h2>Přehled</h2>
 
-        <a href="./548a4f1f-a785-4dec-ad6d-708422cff13e.svg">
+        <a href="../548a4f1f-a785-4dec-ad6d-708422cff13e.svg">
           <figure>
-            <img src="./548a4f1f-a785-4dec-ad6d-708422cff13e.svg" alt="View for AMCR metadata profile v2.2" />
+            <img src="../548a4f1f-a785-4dec-ad6d-708422cff13e.svg" alt="View for AMCR metadata profile v2.2" />
             <figcaption>View for AMCR metadata profile v2.2</figcaption>
           </figure>
         </a>
@@ -349,7 +346,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#akce.chranene_udaje">Chráněné údaje</a>, <a href="#akce.vedouci_akce_ostatni">Další vedoucí</a>, <a href="#akce.datum_ukonceni">Datum ukončení</a>, <a href="#akce.datum_zahajeni">Datum zahájení</a>, <a href="#akce.hlavni_typ">Hlavní typ</a>, <a href="#akce.je_nz">Nahrazuje NZ</a>, <a href="#akce.odlozena_nz">NZ odložena</a>, <a href="#akce.organizace">Organizace</a>, <a href="#akce.specifikace_data">Přesnost data</a>, <a href="#akce.projekt">Projekt</a>, <a href="#akce.propertydisjointwith">propertyDisjointWith (@en)</a>, <a href="#akce.typ">Typ</a>, <a href="#akce.ulozeni_dokumentace">Uložení dokumentace</a>, <a href="#akce.ulozeni_nalezu">Uložení nálezů</a>, <a href="#akce.vedlejsi_typ">Vedlejší typ</a>, <a href="#akce.hlavni_vedouci">Vedoucí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.akce"></a></li>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.propertydisjointwith"></a></li>
@@ -1338,7 +1338,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#aktivita.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#komponenta"></a> → <a href="#komponenta.aktivita"></a></li>
               </ul>
@@ -1444,6 +1447,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#amcr.adb">Archeologický dokumentační bod</a>, <a href="#amcr.archeologicky_zaznam">Archeologický záznam</a>, <a href="#amcr.dokument">Dokument</a>, <a href="#amcr.ext_zdroj">Externí zdroj</a>, <a href="#amcr.ruian_katastr">Katastrální území</a>, <a href="#amcr.ruian_kraj">Kraj</a>, <a href="#amcr.let">Let</a>, <a href="#amcr.ruian_okres">Okres</a>, <a href="#amcr.organizace">Organizace</a>, <a href="#amcr.osoba">Osoba</a>, <a href="#amcr.pian">PIAN</a>, <a href="#amcr.projekt">Projekt</a>, <a href="#amcr.samostatny_nalez">Samostatný nález</a>, <a href="#amcr.heslo">Slovníkové heslo</a>, <a href="#amcr.uzivatel">Uživatel</a>.</p>
           
           
               <section id="amcr.adb">
@@ -2374,7 +2380,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#adb.autor_popisu">Autor popisu</a>, <a href="#adb.autor_revize">Autor revize</a>, <a href="#adb.chranene_udaje">Chráněné údaje</a>, <a href="#adb.dokumentacni_jednotka">Dokumentační jednotka</a>, <a href="#adb.ident_cely">ID</a>, <a href="#adb.sm5">List SM5</a>, <a href="#adb.stratigraficke_jednotky">Počet strat. jednotek</a>, <a href="#adb.podnet">Podnět</a>, <a href="#adb.pristupnost_pom">Přístupnost</a>, <a href="#adb.rok_popisu">Rok popisu</a>, <a href="#adb.rok_revize">Rok revize</a>, <a href="#adb.stav_pom">Stav</a>, <a href="#adb.typ_sondy">Typ sondy</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.adb"></a></li>
                   <li>z domény <a href="#amcr"></a> → <a href="#amcr.adb"></a></li>
@@ -3190,7 +3199,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#archeologicky_zaznam.akce">Akce</a>, <a href="#archeologicky_zaznam.chranene_udaje">Chráněné údaje</a>, <a href="#archeologicky_zaznam.dokument">Dokument</a>, <a href="#archeologicky_zaznam.dokumentacni_jednotka">Dokumentační jednotka</a>, <a href="#archeologicky_zaznam.ext_odkaz">Externí odkaz</a>, <a href="#archeologicky_zaznam.historie">Historie</a>, <a href="#archeologicky_zaznam.ident_cely">ID</a>, <a href="#archeologicky_zaznam.lokalita">Lokalita</a>, <a href="#archeologicky_zaznam.okres">Okres</a>, <a href="#archeologicky_zaznam.pristupnost">Přístupnost</a>, <a href="#archeologicky_zaznam.stav">Stav</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument_cast"></a> → <a href="#dokument_cast.archeologicky_zaznam"></a></li>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.archeologicky_zaznam"></a></li>
@@ -3904,7 +3916,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#areal.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#komponenta"></a> → <a href="#komponenta.areal"></a></li>
               </ul>
@@ -4030,7 +4045,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#autor.osoba">Osoba</a>, <a href="#autor.poradi">Pořadí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.autor"></a></li>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.autor"></a></li>
@@ -4210,7 +4228,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_cast.archeologicky_zaznam">Archeologický záznam</a>, <a href="#dokument_cast.ident_cely">ID</a>, <a href="#dokument_cast.komponenta">Komponenta</a>, <a href="#dokument_cast.neident_akce">Neidentifikovaná akce</a>, <a href="#dokument_cast.poznamka">Poznámka</a>, <a href="#dokument_cast.projekt">Projekt</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.dokument_cast"></a></li>
               </ul>
@@ -4646,7 +4667,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#akce.lokalizace_okolnosti">Lokalizace/okolnosti</a>, <a href="#akce.souhrn_upresneni">Souhrn/upřesnění</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.chranene_udaje"></a></li>
               </ul>
@@ -4854,7 +4878,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#adb.cislo_popisne">Číslo popisné</a>, <a href="#adb.parcelni_cislo">Parcelní číslo</a>, <a href="#adb.poznamka">Poznámka</a>, <a href="#adb.trat">Ulice / trať</a>, <a href="#adb.uzivatelske_oznaceni_sondy">Uživatelské označení</a>, <a href="#adb.vyskovy_bod">Výškový bod</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.chranene_udaje"></a></li>
               </ul>
@@ -5274,7 +5301,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#archeologicky_zaznam.dalsi_katastr">Další katastry</a>, <a href="#archeologicky_zaznam.hlavni_katastr">Hlavní katastr</a>, <a href="#archeologicky_zaznam.uzivatelske_oznaceni">Uživatelské označení</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.chranene_udaje"></a></li>
               </ul>
@@ -5529,7 +5559,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#lokalita.nazev">Název</a>, <a href="#lokalita.popis">Popis</a>, <a href="#lokalita.poznamka">Poznámka</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.chranene_udaje"></a></li>
               </ul>
@@ -5776,7 +5809,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pian.geom_gml">GML (EPSG:4326)</a>, <a href="#pian.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#pian.zm10">List ZM10</a>, <a href="#pian.geom_wkt">WKT (EPSG:4326)</a>, <a href="#pian.geom_sjtsk_wkt">WKT (EPSG:5514)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#pian"></a> → <a href="#pian.chranene_udaje"></a></li>
               </ul>
@@ -6139,7 +6175,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#projekt.dalsi_katastr">Další katastry</a>, <a href="#projekt.geom_gml">GML (EPSG:4326)</a>, <a href="#projekt.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#projekt.hlavni_katastr">Hlavní katastr</a>, <a href="#projekt.lokalizace">Lokalizace</a>, <a href="#projekt.kulturni_pamatka_popis">Název památky</a>, <a href="#projekt.parcelni_cislo">Parcelní číslo</a>, <a href="#projekt.kulturni_pamatka_cislo">Rejstříkové číslo ÚSKP</a>, <a href="#projekt.geom_wkt">WKT (EPSG:4326)</a>, <a href="#projekt.geom_sjtsk_wkt">WKT (EPSG:5514)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.chranene_udaje"></a></li>
               </ul>
@@ -6790,7 +6829,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#samostatny_nalez.geom_gml">GML (EPSG:4326)</a>, <a href="#samostatny_nalez.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#samostatny_nalez.katastr">Katastr</a>, <a href="#samostatny_nalez.lokalizace">Lokalizace</a>, <a href="#samostatny_nalez.geom_wkt">WKT (EPSG:4326)</a>, <a href="#samostatny_nalez.geom_sjtsk_wkt">WKT (EPSG:5514)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.chranene_udaje"></a></li>
               </ul>
@@ -7201,7 +7243,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#vedouci_akce_ostatni.id">ID</a>, <a href="#vedouci_akce_ostatni.organizace">Organizace</a>, <a href="#vedouci_akce_ostatni.vedouci">Vedoucí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.vedouci_akce_ostatni"></a></li>
               </ul>
@@ -7455,7 +7500,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#datace.poznamka">Poznámka</a>, <a href="#datace.rok_do_max">Rok do (max)</a>, <a href="#datace.rok_do_min">Rok do (min)</a>, <a href="#Datace.rok_od_max">Rok od (max)</a>, <a href="#datace.rok_od_min">Rok od (min)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#heslo"></a> → <a href="#heslo.datace"></a></li>
               </ul>
@@ -7551,7 +7599,7 @@
                     <td>
                       <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a>
               
-                          [0..1]
+                          [1..1]
               
                   </td>
                   </tr>
@@ -7809,7 +7857,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dohlednost.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#let"></a> → <a href="#let.dohlednost"></a></li>
               </ul>
@@ -7930,7 +7981,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument.autor">Autor</a>, <a href="#dokument.dokument_cast">Část dokumentu</a>, <a href="#dokument.datum_zverejneni">Datum zveřejnění</a>, <a href="#dokument.doi">DOI</a>, <a href="#dokument.osoba">Dokumentované osoby</a>, <a href="#dokument.historie">Historie</a>, <a href="#dokument.ident_cely">ID</a>, <a href="#dokument.jazyk_dokumentu">Jazyk</a>, <a href="#dokument.let">Let</a>, <a href="#dokument.licence">Licence</a>, <a href="#dokument.material_originalu">Materiál originálu</a>, <a href="#dokument.organizace">Organizace</a>, <a href="#dokument.oznaceni_originalu">Označení originálu</a>, <a href="#dokument.popis">Popis</a>, <a href="#dokument.poznamka">Poznámka</a>, <a href="#dokument.pristupnost">Přístupnost</a>, <a href="#dokument.rada">Řada</a>, <a href="#dokument.rok_vzniku">Rok vzniku</a>, <a href="#dokument.extra_data">Rozšiřující popis</a>, <a href="#dokument.soubor">Soubor</a>, <a href="#dokument.stav">Stav</a>, <a href="#dokument.tvar">Tvar</a>, <a href="#dokument.typ_dokumentu">Typ dokumentu</a>, <a href="#dokument.ulozeni_originalu">Uložení originálu</a>, <a href="#dokument.posudek">Zahrnuje posudky</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#let"></a> → <a href="#let.dokument"></a></li>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.dokument"></a></li>
@@ -9439,7 +9493,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokumentacni_jednotka.adb">Archeologický dokumentační bod</a>, <a href="#dokumentacni_jednotka.ident_cely">ID</a>, <a href="#dokumentacni_jednotka.komponenta">Komponenta</a>, <a href="#dokumentacni_jednotka.nazev">Název</a>, <a href="#dokumentacni_jednotka.pian">PIAN</a>, <a href="#dokumentacni_jednotka.negativni_jednotka">Terénní zjištění</a>, <a href="#dokumentacni_jednotka.typ">Typ</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.dokumentacni_jednotka"></a></li>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.dokumentacni_jednotka"></a></li>
@@ -9916,7 +9973,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#letfoto_tvar.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#tvar"></a> → <a href="#tvar.tvar"></a></li>
               </ul>
@@ -10060,7 +10120,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#lokalita_druh.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.druh"></a></li>
               </ul>
@@ -10204,7 +10267,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#objekt_druh.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#nalez_objekt"></a> → <a href="#nalez_objekt.druh"></a></li>
               </ul>
@@ -10348,7 +10414,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#predmet_druh.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#nalez_predmet"></a> → <a href="#nalez_predmet.druh"></a></li>
                   <li>z domény <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.druh_nalezu"></a></li>
@@ -10475,7 +10544,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#editor.osoba">Osoba</a>, <a href="#editor.poradi">Pořadí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.editor"></a></li>
               </ul>
@@ -10654,7 +10726,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ext_odkaz.ez.archeologicky_zaznam">Archeologický záznam</a>, <a href="#ext_odkaz.ez.id">ID</a>, <a href="#ext_odkaz.ez.paginace">Paginace odkazu</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.ext_odkaz"></a></li>
               </ul>
@@ -10891,7 +10966,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ext_odkaz.az.ext_zdroj">Externí zdroj</a>, <a href="#ext_odkaz.az.id">ID</a>, <a href="#ext_odkaz.az.paginace">Paginace odkazu</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.ext_odkaz"></a></li>
               </ul>
@@ -11123,7 +11201,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ext_zdroj.autor">Autor</a>, <a href="#ext_zdroj.casopis_denik_nazev">Časopis/deník</a>, <a href="#ext_zdroj.datum_rd">Datum vydání</a>, <a href="#ext_zdroj.doi">DOI</a>, <a href="#ext_zdroj.edice_rada">Edice/řada</a>, <a href="#ext_zdroj.editor">Editor</a>, <a href="#ext_zdroj.ext_odkaz">Externí odkaz</a>, <a href="#ext_zdroj.historie">Historie</a>, <a href="#ext_zdroj.ident_cely">ID</a>, <a href="#ext_zdroj.isbn">ISBN</a>, <a href="#ext_zdroj.issn">ISSN</a>, <a href="#ext_zdroj.misto">Místo vydání</a>, <a href="#ext_zdroj.nazev">Název</a>, <a href="#ext_zdroj.link">Odkaz</a>, <a href="#ext_zdroj.organizace">Organizace</a>, <a href="#ext_zdroj.paginace_titulu">Paginace titulu</a>, <a href="#ext_zdroj.poznamka">Poznámka</a>, <a href="#ext_zdroj.casopis_rocnik">Ročník</a>, <a href="#ext_zdroj.rok_vydani_vzniku">Rok vydání</a>, <a href="#ext_zdroj.sbornik_nazev">Sborník/kniha</a>, <a href="#ext_zdroj.stav">Stav</a>, <a href="#ext_zdroj.typ">Typ</a>, <a href="#ext_zdroj.typ_dokumentu">Typ dokumentu</a>, <a href="#ext_zdroj.vydavatel">Vydavatel</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ext_odkaz.az"></a> → <a href="#ext_odkaz.az.ext_zdroj"></a></li>
                   <li>z domény <a href="#amcr"></a> → <a href="#amcr.ext_zdroj"></a></li>
@@ -12583,7 +12664,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_format.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#extra_data"></a> → <a href="#extra_data.format"></a></li>
               </ul>
@@ -12699,7 +12783,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#historie.datum_zmeny">Datum změny</a>, <a href="#historie.id">ID</a>, <a href="#historie.poznamka">Poznámka</a>, <a href="#historie.typ_zmeny">Typ změny</a>, <a href="#historie.uzivatel">Uživatel</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.historie"></a></li>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.historie"></a></li>
@@ -13061,7 +13148,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#jazyk.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.jazyk_dokumentu"></a></li>
               </ul>
@@ -13187,7 +13277,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#jistota_urceni.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.jistota"></a></li>
               </ul>
@@ -13312,6 +13405,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#areal_kat.equivalentclass">equivalentClass (@en)</a>.</p>
           
           
               <section id="areal_kat.equivalentclass">
@@ -13444,6 +13540,9 @@
           
             </table>
           
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#lokalita_druh_kat.equivalentclass">equivalentClass (@en)</a>.</p>
+          
           
               <section id="lokalita_druh_kat.equivalentclass">
                 <h4>equivalentClass (@en)</h4>
@@ -13565,6 +13664,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#obdobi_kat.equivalentclass">equivalentClass (@en)</a>.</p>
           
           
               <section id="obdobi_kat.equivalentclass">
@@ -13697,6 +13799,9 @@
           
             </table>
           
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#objekt_druh_kat.equivalentclass">equivalentClass (@en)</a>.</p>
+          
           
               <section id="objekt_druh_kat.equivalentclass">
                 <h4>equivalentClass (@en)</h4>
@@ -13827,6 +13932,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#predmet_druh_kat.equivalentclass">equivalentClass (@en)</a>.</p>
           
           
               <section id="predmet_druh_kat.equivalentclass">
@@ -13959,6 +14067,9 @@
           
             </table>
           
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#objekt_specifikace_kat.equivalentclass">equivalentClass (@en)</a>.</p>
+          
           
               <section id="objekt_specifikace_kat.equivalentclass">
                 <h4>equivalentClass (@en)</h4>
@@ -14080,6 +14191,9 @@
                 </tr>
           
             </table>
+          
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#akce_typ_kat.equivalentclass">equivalentClass (@en)</a>.</p>
           
           
               <section id="akce_typ_kat.equivalentclass">
@@ -14203,6 +14317,9 @@
           
             </table>
           
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#posudek_typ_kat.equivalentclass">equivalentClass (@en)</a>.</p>
+          
           
               <section id="posudek_typ_kat.equivalentclass">
                 <h4>equivalentClass (@en)</h4>
@@ -14315,7 +14432,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#komponenta.aktivita">Aktivity</a>, <a href="#komponenta.areal">Areál</a>, <a href="#komponenta.ident_cely">ID</a>, <a href="#komponenta.jistota">Jistá datace</a>, <a href="#komponenta.obdobi">Období</a>, <a href="#komponenta.nalez_objekt">Objekty</a>, <a href="#komponenta.poznamka">Poznámka</a>, <a href="#komponenta.nalez_predmet">Předměty</a>, <a href="#komponenta.presna_datace">Přesná datace</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument_cast"></a> → <a href="#dokument_cast.komponenta"></a></li>
                   <li>z domény <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.komponenta"></a></li>
@@ -14901,7 +15021,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#let.hodina_konec">Čas ukončení</a>, <a href="#let.hodina_zacatek">Čas zahájení</a>, <a href="#let.datum">Datum</a>, <a href="#let.dohlednost">Dohlednost</a>, <a href="#let.dokument">Dokument</a>, <a href="#let.fotoaparat">Fotoaparát</a>, <a href="#let.ident_cely">ID</a>, <a href="#let.letiste_cil">Letiště cíl</a>, <a href="#let.letiste_start">Letiště start</a>, <a href="#let.organizace">Organizace</a>, <a href="#let.pilot">Pilot</a>, <a href="#let.pocasi">Počasí</a>, <a href="#let.pozorovatel">Pozorovatel</a>, <a href="#let.typ_letounu">Typ letounu</a>, <a href="#let.ucel_letu">Účel letu</a>, <a href="#let.uzivatelske_oznaceni">Uživatelské označení</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.let"></a></li>
                   <li>z domény <a href="#amcr"></a> → <a href="#amcr.let"></a></li>
@@ -15896,7 +16019,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#letiste.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#let"></a> → <a href="#let.letiste_cil"></a></li>
                   <li>z domény <a href="#let"></a> → <a href="#let.letiste_start"></a></li>
@@ -16023,7 +16149,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_licence.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.licence"></a></li>
               </ul>
@@ -16154,7 +16283,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#lokalita.chranene_udaje">Chráněné údaje</a>, <a href="#lokalita.druh">Druh</a>, <a href="#lokalita.igsn">IGSN</a>, <a href="#lokalita.jistota">Jistota</a>, <a href="#lokalita.propertydisjointwith">propertyDisjointWith (@en)</a>, <a href="#lokalita.typ_lokality">Typ</a>, <a href="#lokalita.zachovalost">Zachovalost</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.lokalita"></a></li>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.propertydisjointwith"></a></li>
@@ -16624,7 +16756,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#odkaz.id">ID</a>, <a href="#odkaz.kod">Kód (ID)</a>, <a href="#odkaz.nazev_kodu">Název kódu/ID</a>, <a href="#odkaz.skos_mapping_relation">Typ vazby (SKOS)</a>, <a href="#odkaz.scheme_uri">URI schématu</a>, <a href="#odkaz.uri">URL</a>, <a href="#odkaz.zdroj">Zdroj</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#heslo"></a> → <a href="#heslo.odkaz"></a></li>
               </ul>
@@ -17094,7 +17229,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_material.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument_typ_material_rada"></a> → <a href="#dokument_typ_material_rada.dokument_material"></a></li>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.material_originalu"></a></li>
@@ -17230,7 +17368,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#predmet_specifikace.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#nalez_predmet"></a> → <a href="#nalez_predmet.specifikace"></a></li>
                   <li>z domény <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.specifikace"></a></li>
@@ -17356,7 +17497,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#hierarchie_vyse.id">ID</a>, <a href="#hierarchie_vyse.heslo_nadrazene">Nadřazené heslo</a>, <a href="#hierarchie_vyse.typ">Typ vztahu</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#heslo"></a> → <a href="#heslo.hierarchie_vyse"></a></li>
               </ul>
@@ -17593,7 +17737,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_nahrada.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#extra_data"></a> → <a href="#extra_data.nahrada"></a></li>
               </ul>
@@ -17719,7 +17866,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#nalezove_okolnosti.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.okolnosti"></a></li>
               </ul>
@@ -17854,7 +18004,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#neident_akce.katastr">Katastr</a>, <a href="#neident_akce.lokalizace">Lokalizace</a>, <a href="#neident_akce.okres">Okres</a>, <a href="#neident_akce.pian">PIAN</a>, <a href="#neident_akce.popis">Popis</a>, <a href="#neident_akce.poznamka">Poznámka</a>, <a href="#neident_akce.rok_ukonceni">Rok ukončení</a>, <a href="#neident_akce.rok_zahajeni">Rok zahájení</a>, <a href="#neident_akce.vedouci">Vedoucí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument_cast"></a> → <a href="#dokument_cast.neident_akce"></a></li>
               </ul>
@@ -18446,7 +18599,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#obdobi.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#komponenta"></a> → <a href="#komponenta.obdobi"></a></li>
                   <li>z domény <a href="#samostatny_nalez"></a> → <a href="#samostatny_nalez.obdobi"></a></li>
@@ -18581,7 +18737,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#nalez_objekt.druh">Druh</a>, <a href="#nalez_objekt.id">ID</a>, <a href="#nalez_objekt.pocet">Počet</a>, <a href="#nalez_objekt.poznamka">Poznámka</a>, <a href="#nalez_objekt.specifikace">Specifikace</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#komponenta"></a> → <a href="#komponenta.nalez_objekt"></a></li>
               </ul>
@@ -18928,7 +19087,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#organizace.adresa">Adresa</a>, <a href="#organizace.email">Email</a>, <a href="#organizace.ico">IČO</a>, <a href="#organizace.ident_cely">ID</a>, <a href="#organizace.mesicu_do_zverejneni">Měsíců do zveřejnění</a>, <a href="#organizace.soucast">Nadřazená organizace</a>, <a href="#organizace.nazev">Název</a>, <a href="#organizace.nazev_zkraceny">Název - zkrácený</a>, <a href="#organizace.nazev_zkraceny_en">Název - zkrácený (EN)</a>, <a href="#organizace.nazev_en">Název (EN)</a>, <a href="#organizace.oao">OAO</a>, <a href="#organizace.cteni_dokumentu">Povolit čtení archivovaných dokumentů</a>, <a href="#organizace.zverejneni_pristupnost">Přístupnost</a>, <a href="#organizace.ror">ROR</a>, <a href="#organizace.telefon">Telefon</a>, <a href="#organizace.typ_organizace">Typ</a>, <a href="#organizace.zanikla">Zaniklá</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#organizace"></a> → <a href="#organizace.soucast"></a></li>
                   <li>z domény <a href="#let"></a> → <a href="#let.organizace"></a></li>
@@ -19987,7 +20149,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#osoba.ident_cely">ID</a>, <a href="#osoba.jmeno">Jméno</a>, <a href="#osoba.orcid">ORCID</a>, <a href="#osoba.prijmeni">Příjmení</a>, <a href="#osoba.rodne_prijmeni">Rodné příjmení</a>, <a href="#osoba.rok_narozeni">Rok narození</a>, <a href="#osoba.rok_umrti">Rok úmrtí</a>, <a href="#Osoba.vypis_cely">Výpis</a>, <a href="#osoba.vypis">Výpis - zkrácený</a>, <a href="#osoba.wikidata">Wikidata ID</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.autor_popisu"></a></li>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.autor_revize"></a></li>
@@ -20652,7 +20817,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#oznamovatel.adresa">Adresa</a>, <a href="#oznamovatel.email">Email</a>, <a href="#oznamovatel.oznamovatel">Oznamovatel</a>, <a href="#oznamovatel.odpovedna_osoba">Pověřená osoba</a>, <a href="#oznamovatel.poznamka">Poznámka</a>, <a href="#oznamovatel.telefon">Telefon</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.oznamovatel"></a></li>
               </ul>
@@ -21064,7 +21232,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pamatkova_ochrana.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.kulturni_pamatka"></a></li>
               </ul>
@@ -21185,7 +21356,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pian.chranene_udaje">Chráněné údaje</a>, <a href="#pian.dokumentacni_jednotka">Dokumentační jednotka</a>, <a href="#pian.historie">Historie</a>, <a href="#pian.ident_cely">ID</a>, <a href="#pian.presnost">Přesnost</a>, <a href="#pian.pristupnost_pom">Přístupnost</a>, <a href="#pian.geom_system">Souřadnicový systém</a>, <a href="#pian.stav">Stav</a>, <a href="#pian.typ">Typ PIAN</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ruian_katastr"></a> → <a href="#ruian_katastr.pian"></a></li>
                   <li>z domény <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.pian"></a></li>
@@ -21776,7 +21950,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pocasi.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#let"></a> → <a href="#let.pocasi"></a></li>
               </ul>
@@ -21902,7 +22079,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#adb_podnet.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.podnet"></a></li>
               </ul>
@@ -22027,7 +22207,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#hierarchie_nize.id">ID</a>, <a href="#hierarchie_nize.heslo_podrazene">Podřazené heslo</a>, <a href="#hierarchie_nize.typ">Typ vztahu</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#heslo"></a> → <a href="#heslo.hierarchie_nize"></a></li>
               </ul>
@@ -22272,7 +22455,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#nalez_predmet.druh">Druh</a>, <a href="#nalez_predmet.id">ID</a>, <a href="#nalez_predmet.specifikace">Materiál</a>, <a href="#nalez_predmet.pocet">Počet</a>, <a href="#nalez_predmet.poznamka">Poznámka</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#komponenta"></a> → <a href="#komponenta.nalez_predmet"></a></li>
               </ul>
@@ -22624,7 +22810,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#datum_specifikace.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.specifikace_data"></a></li>
               </ul>
@@ -22750,7 +22939,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pian_presnost.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#pian"></a> → <a href="#pian.presnost"></a></li>
               </ul>
@@ -22876,7 +23068,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pristupnost.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.pristupnost"></a></li>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.pristupnost"></a></li>
@@ -23003,7 +23198,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#projekt.archeologicky_zaznam">Archeologický záznam</a>, <a href="#projekt.chranene_udaje">Chráněné údaje</a>, <a href="#projekt.datum_ukonceni">Datum ukončení</a>, <a href="#projekt.datum_zahajeni">Datum zahájení</a>, <a href="#projekt.dokument">Dokument</a>, <a href="#projekt.historie">Historie</a>, <a href="#projekt.ident_cely">ID</a>, <a href="#projekt.okres">Okres</a>, <a href="#projekt.organizace">Organizace</a>, <a href="#projekt.oznaceni_stavby">Označení stavby</a>, <a href="#projekt.oznamovatel">Oznamovatel</a>, <a href="#projekt.kulturni_pamatka">Památková ochrana</a>, <a href="#projekt.planovane_zahajeni">Plánované zahájení</a>, <a href="#projekt.podnet">Podnět</a>, <a href="#projekt.pristupnost_pom">Přístupnost</a>, <a href="#projekt.samostatny_nalez">Samostatné nálezy</a>, <a href="#projekt.soubor">Soubor</a>, <a href="#projekt.geom_system">Souřadnicový systém</a>, <a href="#projekt.stav">Stav</a>, <a href="#projekt.termin_odevzdani_nz">Termín odevzdání NZ</a>, <a href="#projekt.typ_projektu">Typ</a>, <a href="#projekt.uzivatelske_oznaceni">Uživatelské označení</a>, <a href="#projekt.vedouci_projektu">Vedoucí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.okres"></a></li>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.projekt"></a></li>
@@ -24401,7 +24599,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_rada.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.rada"></a></li>
               </ul>
@@ -24527,7 +24728,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#extra_data.datum_vzniku">Datum vzniku</a>, <a href="#extra_data.udalost">Dokumentovaná událost</a>, <a href="#extra_data.duveryhodnost">Důvěryhodnost (%)</a>, <a href="#extra_data.format">Formát</a>, <a href="#extra_data.geom_gml">GML (EPSG:4326)</a>, <a href="#extra_data.geom_sjtsk_gml">GML (EPSG:5514)</a>, <a href="#extra_data.meritko">Měřítko plánu</a>, <a href="#extra_data.nahrada">Náhrada originálu</a>, <a href="#extra_data.cislo_objektu">Objekt/kontext</a>, <a href="#extra_data.odkaz">Odkaz</a>, <a href="#extra_data.pocet_variant_originalu">Počet variant originálu</a>, <a href="#extra_data.region">Region</a>, <a href="#extra_data.rok_do">Rok do</a>, <a href="#extra_data.rok_od">Rok od</a>, <a href="#extra_data.sirka">Šířka plánu (cm)</a>, <a href="#extra_data.geom_system">Souřadnicový systém</a>, <a href="#extra_data.udalost_typ">Typ dokumentované události</a>, <a href="#extra_data.vyska">Výška plánu (cm)</a>, <a href="#extra_data.geom_wkt">WKT (EPSG:4326)</a>, <a href="#extra_data.geom_sjtsk_wkt">WKT (EPSG:5514)</a>, <a href="#extra_data.zachovalost">Zachovalost</a>, <a href="#extra_data.zeme">Země</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.extra_data"></a></li>
               </ul>
@@ -25877,7 +26081,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ruian_katastr.definicni_bod_gml">Definiční bod (GML)</a>, <a href="#ruian_katastr.definicni_bod_wkt">Definiční bod (WKT)</a>, <a href="#ruian_katastr.hranice_gml">Hranice (GML)</a>, <a href="#ruian_katastr.hranice_wkt">Hranice (WKT)</a>, <a href="#ruian_katastr.kod">Kód RÚIAN</a>, <a href="#ruian_katastr.nazev">Název</a>, <a href="#ruian_katastr.okres">Okres</a>, <a href="#ruian_katastr.pian">PIAN</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#chranene_udaje.archeologicky_zaznam"></a> → <a href="#archeologicky_zaznam.dalsi_katastr"></a></li>
                   <li>z domény <a href="#chranene_udaje.projekt"></a> → <a href="#projekt.dalsi_katastr"></a></li>
@@ -26405,7 +26612,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ruian_kraj.definicni_bod_gml">Definiční bod (GML)</a>, <a href="#ruian_kraj.definicni_bod_wkt">Definiční bod (WKT)</a>, <a href="#ruian_kraj.email">Email pro oznámení</a>, <a href="#ruian_kraj.hranice_gml">Hranice (GML)</a>, <a href="#ruian_kraj.hranice_wkt">Hranice (WKT)</a>, <a href="#ruian_kraj.kod">Kód RÚIAN</a>, <a href="#ruian_kraj.nazev">Název</a>, <a href="#ruian_kraj.nazev_en">Název (EN)</a>, <a href="#ruian_kraj.rada_id">Region</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ruian_okres"></a> → <a href="#ruian_okres.kraj"></a></li>
                   <li>z domény <a href="#hlidaci_pes.kraj"></a> → <a href="#hlidaci_pes.kraj.kraj"></a></li>
@@ -26998,7 +27208,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ruian_okres.definicni_bod_gml">Definiční bod (GML)</a>, <a href="#ruian_okres.definicni_bod_wkt">Definiční bod (WKT)</a>, <a href="#ruian_okres.hranice_gml">Hranice (GML)</a>, <a href="#ruian_okres.hranice_wkt">Hranice (WKT)</a>, <a href="#ruian_okres.kod">Kód RÚIAN</a>, <a href="#ruian_okres.kraj">Kraj</a>, <a href="#ruian_okres.nazev">Název</a>, <a href="#ruian_okres.nazev_en">Název (EN)</a>, <a href="#ruian_okres.spz">Zkratka</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ruian_katastr"></a> → <a href="#ruian_katastr.okres"></a></li>
                   <li>z domény <a href="#hlidaci_pes.okres"></a> → <a href="#hlidaci_pes.okres.okres"></a></li>
@@ -27583,7 +27796,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#samostatny_nalez.chranene_udaje">Chráněné údaje</a>, <a href="#samostatny_nalez.datum_nalezu">Datum nálezu</a>, <a href="#samostatny_nalez.druh_nalezu">Druh</a>, <a href="#samostatny_nalez.evidencni_cislo">Evidenční číslo</a>, <a href="#samostatny_nalez.historie">Historie</a>, <a href="#samostatny_nalez.hloubka">Hloubka (cm)</a>, <a href="#samostatny_nalez.ident_cely">ID</a>, <a href="#samostatny_nalez.igsn">IGSN</a>, <a href="#samostatny_nalez.specifikace">Materiál</a>, <a href="#samostatny_nalez.nalezce">Nálezce</a>, <a href="#samostatny_nalez.obdobi">Období</a>, <a href="#samostatny_nalez.okolnosti">Okolnosti</a>, <a href="#samostatny_nalez.okres">Okres</a>, <a href="#samostatny_nalez.pocet">Počet</a>, <a href="#samostatny_nalez.poznamka">Poznámka</a>, <a href="#samostatny_nalez.predano">Předáno</a>, <a href="#samostatny_nalez.predano_organizace">Předáno organizaci</a>, <a href="#samostatny_nalez.presna_datace">Přesná datace</a>, <a href="#samostatny_nalez.geom_system">Primární EPSG</a>, <a href="#samostatny_nalez.pristupnost">Přístupnost</a>, <a href="#samostatny_nalez.projekt">Projekt</a>, <a href="#samostatny_nalez.soubor">Soubor</a>, <a href="#samostatny_nalez.stav">Stav</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.samostatny_nalez"></a></li>
                   <li>z domény <a href="#amcr"></a> → <a href="#amcr.samostatny_nalez"></a></li>
@@ -28974,7 +29190,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#heslo.datace">Datace</a>, <a href="#heslo.heslo">Heslo</a>, <a href="#heslo.heslo_en">Heslo (EN)</a>, <a href="#heslo.ident_cely">ID</a>, <a href="#heslo.odkaz">Mapování</a>, <a href="#heslo.hierarchie_vyse">Nadřazená hesla</a>, <a href="#heslo.nazev_heslare">Název hesláře</a>, <a href="#heslo.hierarchie_nize">Podřazená hesla</a>, <a href="#heslo.popis">Popis (CS)</a>, <a href="#heslo.popis_en">Popis (EN)</a>, <a href="#heslo.razeni">Řazení</a>, <a href="#heslo.dokument_typ_material_rada">Typ, materiál a řada dokumentu</a>, <a href="#heslo.zkratka">Zkratka</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb_podnet"></a> → <a href="#adb_podnet.equivalentclass"></a></li>
                   <li>z domény <a href="#adb_typ"></a> → <a href="#adb_typ.equivalentclass"></a></li>
@@ -29839,7 +30058,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#soubor.path">Cesta</a>, <a href="#soubor.historie">Historie souboru</a>, <a href="#soubor.id">ID</a>, <a href="#soubor.sha_512">Kontrolní součet (SHA-512)</a>, <a href="#soubor.nazev">Název</a>, <a href="#soubor.rozsah">Počet stran</a>, <a href="#soubor.mimetype">Typ souboru (MIME)</a>, <a href="#soubor.url">URL</a>, <a href="#soubor.size_mb">Velikost (MB)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.soubor"></a></li>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.soubor"></a></li>
@@ -30444,7 +30666,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#objekt_specifikace.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#nalez_objekt"></a> → <a href="#nalez_objekt.specifikace"></a></li>
               </ul>
@@ -30569,7 +30794,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#spoluprace_nadrizeni.historie">Historie</a>, <a href="#spoluprace_nadrizeni.id">ID</a>, <a href="#spoluprace_nadrizeni.stav">Stav</a>, <a href="#spoluprace_nadrizeni.vedouci">Vedoucí</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#uzivatel"></a> → <a href="#uzivatel.spoluprace_nadrizeni"></a></li>
               </ul>
@@ -30862,7 +31090,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#spoluprace_podrizeni.historie">Historie</a>, <a href="#spoluprace_podrizeni.id">ID</a>, <a href="#spoluprace_podrizeni.spolupracovnik">Spolupracovník</a>, <a href="#spoluprace_podrizeni.stav">Stav</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#uzivatel"></a> → <a href="#uzivatel.spoluprace_podrizeni"></a></li>
               </ul>
@@ -31156,7 +31387,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#stav_dochovani.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.zachovalost"></a></li>
               </ul>
@@ -31282,7 +31516,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#tvar.id">ID</a>, <a href="#tvar.poznamka">Poznámka</a>, <a href="#tvar.tvar">Tvar</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.tvar"></a></li>
               </ul>
@@ -31528,7 +31765,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#akce_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.hlavni_typ"></a></li>
                   <li>z domény <a href="#akce"></a> → <a href="#akce.vedlejsi_typ"></a></li>
@@ -31655,7 +31895,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dok_jednotka_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokumentacni_jednotka"></a> → <a href="#dokumentacni_jednotka.typ"></a></li>
               </ul>
@@ -31781,7 +32024,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#udalost_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#extra_data"></a> → <a href="#extra_data.udalost_typ"></a></li>
               </ul>
@@ -31907,7 +32153,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument_typ_material_rada"></a> → <a href="#dokument_typ_material_rada.dokument_typ"></a></li>
                   <li>z domény <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.typ_dokumentu"></a></li>
@@ -32035,7 +32284,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ext_zdroj_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#ext_zdroj"></a> → <a href="#ext_zdroj.typ"></a></li>
               </ul>
@@ -32161,7 +32413,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#lokalita_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#lokalita"></a> → <a href="#lokalita.typ_lokality"></a></li>
               </ul>
@@ -32287,6 +32542,9 @@
           
             </table>
           
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#nalez_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
           
               <section id="nalez_typ.equivalentclass">
                 <h4>equivalentClass (@en)</h4>
@@ -32409,7 +32667,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#organizace_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#organizace"></a> → <a href="#organizace.typ_organizace"></a></li>
               </ul>
@@ -32535,7 +32796,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#pian_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#pian"></a> → <a href="#pian.typ"></a></li>
               </ul>
@@ -32670,7 +32934,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#posudek_typ.equivalentclass">equivalentClass (@en)</a>, <a href="#posudek_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.posudek"></a></li>
               </ul>
@@ -32858,7 +33125,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#projekt_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#projekt"></a> → <a href="#projekt.typ_projektu"></a></li>
               </ul>
@@ -32984,7 +33254,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#adb_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#adb"></a> → <a href="#adb.typ_sondy"></a></li>
               </ul>
@@ -33110,7 +33383,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#vyskovy_bod_typ.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#vyskovy_bod"></a> → <a href="#vyskovy_bod.typ"></a></li>
               </ul>
@@ -33245,7 +33521,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_typ_material_rada.id">ID</a>, <a href="#dokument_typ_material_rada.dokument_material">Materiál dokumentu</a>, <a href="#dokument_typ_material_rada.dokument_typ">Typ dokumentu</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#heslo"></a> → <a href="#heslo.dokument_typ_material_rada"></a></li>
               </ul>
@@ -33481,7 +33760,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_ulozeni.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#dokument"></a> → <a href="#dokument.ulozeni_originalu"></a></li>
               </ul>
@@ -33597,7 +33879,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#hlidaci_pes.katastr.katastr">Katastrální území</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.katastr"></a></li>
               </ul>
@@ -33708,7 +33993,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#hlidaci_pes.okres.okres">Okres</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.okres"></a></li>
               </ul>
@@ -33819,7 +34107,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#hlidaci_pes.kraj.kraj">Kraj</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#uzivatel"></a> → <a href="#uzivatel.hlidaci_pes.kraj"></a></li>
               </ul>
@@ -33945,7 +34236,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#uzivatel.admin">Administrátor</a>, <a href="#uzivatel.aktivni">Aktivní účet</a>, <a href="#uzivatel.datum_registrace">Datum registrace</a>, <a href="#uzivatel.email">Email</a>, <a href="#uzivatel.historie">Historie</a>, <a href="#uzivatel.ident_cely">ID</a>, <a href="#uzivatel.jazyk">Jazyk</a>, <a href="#uzivatel.jmeno">Jméno</a>, <a href="#uzivatel.orcid">ORCID</a>, <a href="#uzivatel.organizace">Organizace</a>, <a href="#uzivatel.osoba">Osoba</a>, <a href="#uzivatel.prijmeni">Příjmení</a>, <a href="#uzivatel.skupina">Skupiny</a>, <a href="#uzivatel.spoluprace_nadrizeni">Spolupráce s archeology</a>, <a href="#uzivatel.spoluprace_podrizeni">Spolupráce s badateli</a>, <a href="#uzivatel.superadmin">Superadmin</a>, <a href="#uzivatel.telefon">Telefon</a>, <a href="#uzivatel.hlidaci_pes.katastr">Upozornění na projekty</a>, <a href="#uzivatel.hlidaci_pes.okres">Upozornění na projekty</a>, <a href="#uzivatel.hlidaci_pes.kraj">Upozornění na projekty</a>, <a href="#uzivatel.notifikace">Zasílání emailů</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#spoluprace_podrizeni"></a> → <a href="#spoluprace_podrizeni.spolupracovnik"></a></li>
                   <li>z domény <a href="#historie"></a> → <a href="#historie.uzivatel"></a></li>
@@ -35250,7 +35544,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#vyskovy_bod.typ">Dokumentovaná úroveň</a>, <a href="#vyskovy_bod.geom_gml">GML (EPSG:4326)</a>, <a href="#vyskovy_bod.ident_cely">ID</a>, <a href="#vyskovy_bod.geom_wkt">WKT (EPSG:4326)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#chranene_udaje.adb"></a> → <a href="#adb.vyskovy_bod"></a></li>
               </ul>
@@ -35554,7 +35851,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#dokument_zachovalost.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#extra_data"></a> → <a href="#extra_data.zachovalost"></a></li>
               </ul>
@@ -35680,7 +35980,10 @@
           
             </table>
           
-              <p>Zpětné asociace</p>
+              <p><strong>Vlastnosti</strong></p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#zeme.equivalentclass">equivalentClass (@en)</a>.</p>
+          
+              <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#extra_data"></a> → <a href="#extra_data.zeme"></a></li>
               </ul>
@@ -35763,7 +36066,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="přílohy">
       <h2>Přílohy</h2>
         <p>Součástí této specifikace jsou následující přílohy.</p>
         <table class="def">
@@ -35776,14 +36079,12 @@
         <tbody>
             <tr>
               <td>Aplikační profil</td>
-              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+              <td><a href="../dsv.ttl">../dsv.ttl</a></td>
             </tr>
             <tr>
               <td>SHACL validační pravidla</td>
-              <td><a href="./shacl.ttl">./shacl.ttl</a></td>
+              <td><a href="../shacl.ttl">../shacl.ttl</a></td>
             </tr>
-            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
-            <tr><td>Konceptuální diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
             <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
