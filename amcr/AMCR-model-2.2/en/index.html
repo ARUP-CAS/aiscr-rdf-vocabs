@@ -27,7 +27,48 @@
           "title": {
             "en": "AMCR model v2.2"
           },
-          "isProfileOf": [],
+          "isProfileOf": [
+            {
+              "title": {
+                "en": "SKOS Simple Knowledge Organization System"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
+              }
+            },
+            {
+              "title": {
+                "en": "DCAT - Data Catalog Vocabulary"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/dcat3.ttl"
+              }
+            },
+            {
+              "title": {
+                "en": "DCMI Metadata Terms"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+              }
+            },
+            {
+              "title": {
+                "en": "RDF - Resource Description Framework"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
+              }
+            },
+            {
+              "title": {
+                "en": "RDFS - RDF Schema"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+              }
+            }
+          ],
           "hasResource": [
             {
               "@type": [
@@ -354,7 +395,7 @@
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#vedouci_akce_ostatni.organizace">additional fieldwork manager - organisation</a>, <a href="#vedouci_akce_ostatni.vedouci">fieldwork event - additional manager</a>, <a href="#vedouci_akce_ostatni.id">ID</a>.</p>
+                <p>For this class the following properties are defined: <a href="#vedouci_akce_ostatni.organizace">additional fieldwork manager - organisation</a>, <a href="#vedouci_akce_ostatni.vedouci">additional fieldwork manager - person</a>, <a href="#vedouci_akce_ostatni.id">ID</a>.</p>
             </section>            <section id="letiste">
               <h4>Airport (letiste)</h4>
             
@@ -386,8 +427,8 @@
                   <td>AMCR (amcr)</td>
                 </tr>
                 <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#projekt">Project (projekt)</a>, <a href="#archeologicky_zaznam">Archaeological Record (archeologicky_zaznam)</a>, <a href="#let">Flight (let)</a>, <a href="#dokument">Document (dokument)</a>, <a href="#ext_zdroj">External Source (ext_zdroj)</a>, <a href="#pian">Spatial Unit (pian)</a>, <a href="#samostatny_nalez">Individual Find (samostatny_nalez)</a>, <a href="#heslo">Vocabulary Term (heslo)</a>, <a href="#ruian_kraj">RÚIAN - Region (ruian_kraj)</a>, <a href="#organizace">Organisation (organizace)</a>, <a href="#osoba">Person (osoba)</a>, <a href="#hierarchie">Term Hierarchy (hierarchie)</a>, <a href="#historie">History (historie)</a>, <a href="#hlidaci_pes">Project Notification (hlidaci_pes)</a>, <a href="#komponenta">Component (komponenta)</a>, <a href="#soubor">File (soubor)</a>, <a href="#spoluprace">Collaboration (spoluprace)</a></td>
+                  <td>Subclass of</td>
+                  <td><a href="http://www.w3.org/ns/dcat#Catalog">Catalog</a></td>
                 </tr>
               </table>
             
@@ -445,10 +486,6 @@
                   <td>Label</td>
                   <td>Announcer (oznamovatel)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#projekt">Project (projekt)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -473,10 +510,6 @@
                   <td>Subclass of</td>
                   <td><a href="#dokumentacni_jednotka">Documentation Unit (dokumentacni_jednotka)</a></td>
                 </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.adb">Protected Data – Archaeological Documentation Point (chranene_udaje.adb)</a>, <a href="#vyskovy_bod">Elevation Point (vyskovy_bod)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -498,12 +531,8 @@
                   <td>Archaeological records are a collective term for two types of records - archaeological FIELDWORK EVENTS and SITES. The archaeological record is further subdivided into spatial units, the so-called documentation units. A documentation unit can be considered to be the entire area of an event, its part corresponding to a certain group of finds, or its part defined by the course of fieldwork (e.g. a specific trench). Components are linked to documentation units. Components are determined by assignment to an activity area (a specific functional part of a settlement area) and period (a chronological and cultural classification). Each component is also assigned a list of activities, i.e., the types of activities that are directly documented within the component. Components are arbitrarily defined units; the decisive aspect in their definition is the clarity and understandability of the record of the event&#x27;s results. In the AMCR, we do not envisage a detailed and exhaustive description of the archaeological finds belonging to each component; we understand finds only as specific attributes of components that help us to characterize the source material by which the component was recognized.</td>
                 </tr>
                 <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
                   <td>Subclasses</td>
-                  <td><a href="#akce">Fieldwork Event (akce)</a>, <a href="#lokalita">Site (lokalita)</a>, <a href="#chranene_udaje.archeologicky_zaznam">Protected Data – Archaeological Record (chranene_udaje.archeologicky_zaznam)</a>, <a href="#dokumentacni_jednotka">Documentation Unit (dokumentacni_jednotka)</a></td>
+                  <td><a href="#akce">Fieldwork Event (akce)</a>, <a href="#lokalita">Site (lokalita)</a></td>
                 </tr>
               </table>
             
@@ -560,10 +589,6 @@
                 <tr>
                   <td>Label</td>
                   <td>Collaboration (spoluprace)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -625,14 +650,6 @@
                   <td>Label</td>
                   <td>Component (komponenta)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#nalez">Find (nalez)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -685,10 +702,6 @@
                   <td>Label</td>
                   <td>Dating (datace)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#obdobi">Period (obdobi)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -728,17 +741,13 @@
                   <td>A document is an element of documentation of archaeological fieldwork stored in the archives of the ARÚ and ARÚB. Similar information sources in other institutions are treated as external sources; unlike documents, we cannot provide their detailed metadata description or full-text version. The content of documents can be described through document components and finds (analogous to components and finds of archaeological records). Such a description is particularly useful for photographs and plans, whose content is always narrower than the content of the entire fieldwork event. Document parts link documents to other data classes. Each document part records at most one link to an event, site or project and any number of links to components. Documents (especially reports) sometimes contain information about fieldwork that is not reported in archaeological event records, or a link is not yet set up between the document and the event record. For these cases, an unidentified event data class is created in the AMCR in the form of extension information on the document part. In the case of aerial photographs, a link to the flight is usually also included within the document record.</td>
                 </tr>
                 <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
                   <td>Subclasses</td>
-                  <td><a href="#extra_data">Extended Description (extra_data)</a>, <a href="#dokument_cast">Document Part (dokument_cast)</a>, <a href="#tvar">Shape (tvar)</a></td>
+                  <td><a href="#extra_data">Extended Description (extra_data)</a></td>
                 </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#dokument.popis">Description</a>, <a href="#dokument.pristupnost">document - accessibility</a>, <a href="#dokument.posudek">document - analysis</a>, <a href="#dokument.autor">document - author</a>, <a href="#dokument.dokument_cast">document - document part</a>, <a href="#dokument.osoba">document - documented person</a>, <a href="#dokument.tvar">document - documented shape</a>, <a href="#dokument.extra_data">document - extended description</a>, <a href="#dokument.soubor">document - file</a>, <a href="#dokument.let">document - flight</a>, <a href="#dokument.historie">document - history</a>, <a href="#dokument.jazyk_dokumentu">document - language</a>, <a href="#dokument.licence">document - licence</a>, <a href="#dokument.ulozeni_originalu">document - location of original</a>, <a href="#dokument.organizace">document - organisation</a>, <a href="#dokument.material_originalu">document - original material</a>, <a href="#dokument.rada">document - series</a>, <a href="#dokument.typ_dokumentu">document - type</a>, <a href="#documents">documents</a>, <a href="#dokument.doi">DOI</a>, <a href="#dokument.ident_cely">ID</a>, <a href="#dokument.poznamka">Note</a>, <a href="#dokument.oznaceni_originalu">Original label</a>, <a href="#dokument.datum_zverejneni">Publication date</a>, <a href="#dokument.stav">Status</a>, <a href="#dokument.rok_vzniku">Year of creation</a>.</p>
+                <p>For this class the following properties are defined: <a href="#dokument.popis">Description</a>, <a href="#dokument.pristupnost">document - accessibility</a>, <a href="#dokument.posudek">document - analysis type</a>, <a href="#dokument.autor">document - author</a>, <a href="#dokument.dokument_cast">document - document part</a>, <a href="#dokument.osoba">document - documented person</a>, <a href="#dokument.tvar">document - documented shape</a>, <a href="#dokument.extra_data">document - extended description</a>, <a href="#dokument.soubor">document - file</a>, <a href="#dokument.let">document - flight</a>, <a href="#dokument.historie">document - history</a>, <a href="#dokument.jazyk_dokumentu">document - language</a>, <a href="#dokument.licence">document - licence</a>, <a href="#dokument.ulozeni_originalu">document - location of original</a>, <a href="#dokument.organizace">document - organisation</a>, <a href="#dokument.material_originalu">document - original material</a>, <a href="#dokument.rada">document - series</a>, <a href="#dokument.typ_dokumentu">document - type</a>, <a href="#dokument.doi">DOI</a>, <a href="#dokument.ident_cely">ID</a>, <a href="#dokument.poznamka">Note</a>, <a href="#dokument.oznaceni_originalu">Original label</a>, <a href="#dokument.datum_zverejneni">Publication date</a>, <a href="#dokument.stav">Status</a>, <a href="#dokument.rok_vzniku">Year of creation</a>.</p>
             </section>            <section id="dokument_format">
               <h4>Document Format (dokument_format)</h4>
             
@@ -787,14 +796,6 @@
                   <td>Label</td>
                   <td>Document Part (dokument_cast)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#dokument">Document (dokument)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#neident_akce">Unidentified Fieldwork Event (neident_akce)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -833,14 +834,10 @@
                   <td>Subclass of</td>
                   <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#dokument_typ_material_rada">Document Type, Material and Series (dokument_typ_material_rada)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#heslo.dokument_typ_material_rada">document series - document type, material and series</a>.</p>
+                <p>For this class the following properties are defined: <a href="#heslo.dokument_typ_material_rada">series - document type, material and series</a>.</p>
             </section>            <section id="dokument_typ">
               <h4>Document Type (dokument_typ)</h4>
             
@@ -871,10 +868,6 @@
                   <td>Label</td>
                   <td>Document Type, Material and Series (dokument_typ_material_rada)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#dokument_rada">Document Series (dokument_rada)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -890,10 +883,6 @@
                 <tr>
                   <td>Label</td>
                   <td>Documentation Unit (dokumentacni_jednotka)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#archeologicky_zaznam">Archaeological Record (archeologicky_zaznam)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -951,10 +940,6 @@
                   <td>Label</td>
                   <td>Elevation Point (vyskovy_bod)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#adb">Archaeological Documentation Point (adb)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1009,14 +994,10 @@
                   <td>Label</td>
                   <td>External Reference (ext_odkaz)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#ext_zdroj">External Source (ext_zdroj)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#ext_odkaz.ext_zdroj">extenal reference - external source</a>, <a href="#ext_odkaz.archeologicky_zaznam">external reference - archaeological record</a>, <a href="#ext_odkaz.id">ID</a>, <a href="#ext_odkaz.paginace">Reference pagination</a>.</p>
+                <p>For this class the following properties are defined: <a href="#ext_odkaz.archeologicky_zaznam">external reference - archaeological record</a>, <a href="#ext_odkaz.ext_zdroj">external reference - external source</a>, <a href="#ext_odkaz.id">ID</a>, <a href="#ext_odkaz.paginace">Reference pagination</a>.</p>
             </section>            <section id="ext_zdroj">
               <h4>External Source (ext_zdroj)</h4>
             
@@ -1032,14 +1013,6 @@
                 <tr>
                   <td>Definition</td>
                   <td>The AMCR bibliographic segment is used to link archaeological records to source information in publications, expert reports, and grey literature. External sources are understood to be publications, newspaper articles, unpublished reports, and other information sources that are not stored in the ARÚ and ARÚB archives and are therefore not included among the documents. These are linked to fieldwork events and sites by external links.</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#ext_odkaz">External Reference (ext_odkaz)</a></td>
                 </tr>
               </table>
             
@@ -1097,7 +1070,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#nalez_typ">Find Type (nalez_typ)</a></td>
+                  <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -1134,10 +1107,6 @@
                 <tr>
                   <td>Label</td>
                   <td>Feature Specification Category (objekt_specifikace_kat)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#nalez_typ">Find Type (nalez_typ)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -1183,14 +1152,10 @@
                   <td>Subclass of</td>
                   <td><a href="#archeologicky_zaznam">Archaeological Record (archeologicky_zaznam)</a></td>
                 </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.akce">Protected Data – Fieldwork Event (chranene_udaje.akce)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#akce.ulozeni_dokumentace">Documentation repository</a>, <a href="#akce.datum_ukonceni">End date</a>, <a href="#akce.vedouci_akce_ostatni">fieldwork event - additional manager</a>, <a href="#akce.specifikace_data">fieldwork event - date precision</a>, <a href="#akce.hlavni_typ">fieldwork event - main type</a>, <a href="#akce.hlavni_vedouci">fieldwork event - manager</a>, <a href="#akce.organizace">fieldwork event - organisation</a>, <a href="#akce.projekt">fieldwork event - project</a>, <a href="#akce.chranene_udaje">fieldwork event - protected data</a>, <a href="#akce.vedlejsi_typ">fieldwork event - secondary type</a>, <a href="#akce.ulozeni_nalezu">Finds repository</a>, <a href="#akce.odlozena_nz">Report postponed</a>, <a href="#akce.datum_zahajeni">Start date</a>, <a href="#akce.je_nz">Substitutes report</a>, <a href="#akce.typ">Type</a>.</p>
+                <p>For this class the following properties are defined: <a href="#akce.ulozeni_dokumentace">Documentation repository</a>, <a href="#akce.datum_ukonceni">End date</a>, <a href="#akce.vedouci_akce_ostatni">fieldwork event - additional fieldwork manager</a>, <a href="#akce.specifikace_data">fieldwork event - date precision</a>, <a href="#akce.hlavni_typ">fieldwork event - main type</a>, <a href="#akce.hlavni_vedouci">fieldwork event - manager</a>, <a href="#akce.organizace">fieldwork event - organisation</a>, <a href="#akce.projekt">fieldwork event - project</a>, <a href="#akce.chranene_udaje">fieldwork event - protected data</a>, <a href="#akce.vedlejsi_typ">fieldwork event - secondary type</a>, <a href="#akce.ulozeni_nalezu">Finds repository</a>, <a href="#akce.odlozena_nz">Report postponed</a>, <a href="#akce.datum_zahajeni">Start date</a>, <a href="#akce.je_nz">Substitutes report</a>, <a href="#akce.typ">Type</a>.</p>
             </section>            <section id="akce_typ">
               <h4>Fieldwork Event Type (akce_typ)</h4>
             
@@ -1243,10 +1208,6 @@
                   <td>Label</td>
                   <td>File (soubor)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1262,10 +1223,6 @@
                 <tr>
                   <td>Label</td>
                   <td>Find (nalez)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#komponenta">Component (komponenta)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -1289,10 +1246,6 @@
                   <td>Subclass of</td>
                   <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#predmet_druh_kat">Object Category (predmet_druh_kat)</a>, <a href="#objekt_specifikace_kat">Feature Specification Category (objekt_specifikace_kat)</a>, <a href="#predmet_specifikace">Object Material (predmet_specifikace)</a>, <a href="#objekt_druh_kat">Feature Category (objekt_druh_kat)</a></td>
-                </tr>
               </table>
             
             </section>            <section id="let">
@@ -1311,10 +1264,6 @@
                   <td>Definition</td>
                   <td>The records of aerial survey events during which field photographs were taken. It is used to record basic data about the flight, its course, circumstances and conditions.</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1330,10 +1279,6 @@
                 <tr>
                   <td>Label</td>
                   <td>History (historie)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
                 </tr>
               </table>
             
@@ -1354,14 +1299,6 @@
                 <tr>
                   <td>Definition</td>
                   <td>The Record of Individual Finds (AMCR-PAS) is used to collect information on individual finds made as part of archaeological projects, particularly from amateur collaborators of authorised archaeological organisations. The individual finds are linked directly to a specific project, are accompanied by photographic documentation, have their specific spatial delineation by coordinates, and include a description of the find itself. The AMCR system accepts data on finds only after they have been confirmed by the archaeologist responsible for the survey.</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.samostatny_nalez">Protected Data – Individual Find (chranene_udaje.samostatny_nalez)</a></td>
                 </tr>
               </table>
             
@@ -1469,10 +1406,6 @@
                   <td>Label</td>
                   <td>Mapping (odkaz)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1529,7 +1462,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#nalez_typ">Find Type (nalez_typ)</a></td>
+                  <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
@@ -1551,7 +1484,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#nalez_typ">Find Type (nalez_typ)</a></td>
+                  <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
               </table>
             
@@ -1589,14 +1522,10 @@
                   <td>Definition</td>
                   <td>Vocabulary of organisations used in AMCR.</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#organizace.adresa">Address</a>, <a href="#organizace.cteni_dokumentu">Allow reading archived documents</a>, <a href="#organizace.oao">Authorised</a>, <a href="#organizace.ico">Company ID</a>, <a href="#organizace.zanikla">Defunct</a>, <a href="#organizace.email">Email</a>, <a href="#organizace.ident_cely">ID</a>, <a href="#isParticipantOrganisationIn">is participant organisation in</a>, <a href="#organizace.mesicu_do_zverejneni">Months until publication</a>, <a href="#organizace.nazev">Name</a>, <a href="#organizace.nazev_zkraceny">Name - shortened</a>, <a href="#organizace.nazev_zkraceny_en">Name - shortened (EN)</a>, <a href="#organizace.nazev_en">Name (EN)</a>, <a href="#organizace.zverejneni_pristupnost">organisation - accessibility</a>, <a href="#organizace.soucast">organisation - parent organisation</a>, <a href="#organizace.:typ_organizace">organisation - type</a>, <a href="#organizace.ror">ROR</a>, <a href="#organizace.telefon">Telephone</a>.</p>
+                <p>For this class the following properties are defined: <a href="#organizace.adresa">Address</a>, <a href="#organizace.cteni_dokumentu">Allow reading archived documents</a>, <a href="#organizace.oao">Authorised</a>, <a href="#organizace.ico">Company ID</a>, <a href="#organizace.zanikla">Defunct</a>, <a href="#organizace.email">Email</a>, <a href="#organizace.ident_cely">ID</a>, <a href="#organizace.mesicu_do_zverejneni">Months until publication</a>, <a href="#organizace.nazev">Name</a>, <a href="#organizace.nazev_zkraceny">Name - shortened</a>, <a href="#organizace.nazev_zkraceny_en">Name - shortened (EN)</a>, <a href="#organizace.nazev_en">Name (EN)</a>, <a href="#organizace.zverejneni_pristupnost">organisation - accessibility</a>, <a href="#organizace.soucast">organisation - parent organisation</a>, <a href="#organizace.:typ_organizace">organisation - type</a>, <a href="#organizace.ror">ROR</a>, <a href="#organizace.telefon">Telephone</a>.</p>
             </section>            <section id="organizace_typ">
               <h4>Organisation Type (organizace_typ)</h4>
             
@@ -1651,10 +1580,6 @@
                   <td>Subclass of</td>
                   <td><a href="#obdobi_kat">Period Category (obdobi_kat)</a></td>
                 </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#datace">Dating (datace)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1698,17 +1623,13 @@
                   <td>Vocabulary of persons used in AMCR.</td>
                 </tr>
                 <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
                   <td>Subclasses</td>
                   <td><a href="#vedouci_akce_ostatni">Additional Fieldwork Manager (vedouci_akce_ostatni)</a>, <a href="#autor">Author (autor)</a>, <a href="#uzivatel">User (uzivatel)</a></td>
                 </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#osoba.prijmeni">Family name</a>, <a href="#osoba.jmeno">Given name</a>, <a href="#osoba.ident_cely">ID</a>, <a href="#isCreatorOf">is creator of</a>, <a href="#isParticipantPersonIn">is participant person in</a>, <a href="#osoba.vypis_cely">Label</a>, <a href="#osoba.vypis">Label - short</a>, <a href="#osoba.orcid">ORCID</a>, <a href="#osoba.rodne_prijmeni">Surname at birth</a>, <a href="#osoba.wikidata">Wikidata ID</a>, <a href="#osoba.rok_narozeni">Year of birth</a>, <a href="#osoba.rok_umrti">Year of death</a>.</p>
+                <p>For this class the following properties are defined: <a href="#osoba.prijmeni">Family name</a>, <a href="#osoba.jmeno">Given name</a>, <a href="#osoba.ident_cely">ID</a>, <a href="#osoba.vypis_cely">Label</a>, <a href="#osoba.vypis">Label - short</a>, <a href="#osoba.orcid">ORCID</a>, <a href="#osoba.rodne_prijmeni">Surname at birth</a>, <a href="#osoba.wikidata">Wikidata ID</a>, <a href="#osoba.rok_narozeni">Year of birth</a>, <a href="#osoba.rok_umrti">Year of death</a>.</p>
             </section>            <section id="projekt">
               <h4>Project (projekt)</h4>
             
@@ -1725,14 +1646,6 @@
                   <td>Definition</td>
                   <td>Records of field activities of a research or development-led nature recorded in the preparation phase. For the definition of the project, the motivation and the implementing body (authorised organisation), the location and, if applicable, the project documentation are decisive. The project is usually followed by one or (less frequently) more fieldwork, or the recording of individual finds.</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.projekt">Protected Data – Project (chranene_udaje.projekt)</a>, <a href="#oznamovatel">Announcer (oznamovatel)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1748,10 +1661,6 @@
                 <tr>
                   <td>Label</td>
                   <td>Project Notification (hlidaci_pes)</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
                 </tr>
               </table>
             
@@ -1789,7 +1698,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#adb">Archaeological Documentation Point (adb)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1809,12 +1718,12 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#archeologicky_zaznam">Archaeological Record (archeologicky_zaznam)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#archeologicky_zaznam.hlavni_katastr">archaeological record - main cadastral area</a>, <a href="#archeologicky_zaznam.dalsi_katastr">archaeological record - other cadastral areas</a>, <a href="#archeologicky_zaznam.uzivatelske_oznaceni">User label</a>.</p>
+                <p>For this class the following properties are defined: <a href="#archeologicky_zaznam.hlavni_katastr">archaeological record - main cadastral area</a>, <a href="#archeologicky_zaznam.dalsi_katastr">archaeological record - other cadastral area</a>, <a href="#archeologicky_zaznam.uzivatelske_oznaceni">User label</a>.</p>
             </section>            <section id="chranene_udaje.akce">
               <h4>Protected Data – Fieldwork Event (chranene_udaje.akce)</h4>
             
@@ -1829,7 +1738,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#akce">Fieldwork Event (akce)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1849,7 +1758,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#samostatny_nalez">Individual Find (samostatny_nalez)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1869,7 +1778,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#projekt">Project (projekt)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1889,7 +1798,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#lokalita">Site (lokalita)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1909,7 +1818,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a>, <a href="#pian">Spatial Unit (pian)</a></td>
+                  <td><a href="#chranene_udaje">Protected Data (chranene_udaje)</a></td>
                 </tr>
               </table>
             
@@ -1949,10 +1858,6 @@
                   <td>Definition</td>
                   <td>Cadastral areas used in AMCR. Based on RÚIAN (https://www.cuzk.cz/ruian/).</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#ruian_okres">RÚIAN - District (ruian_okres)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -1972,14 +1877,6 @@
                 <tr>
                   <td>Definition</td>
                   <td>Districts used in AMCR. Based on RÚIAN (https://www.cuzk.cz/ruian/).</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#ruian_kraj">RÚIAN - Region (ruian_kraj)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#ruian_katastr">RÚIAN - Cadastral Area (ruian_katastr)</a></td>
                 </tr>
               </table>
             
@@ -2001,14 +1898,6 @@
                   <td>Definition</td>
                   <td>Regions used in AMCR. Based on RÚIAN (https://www.cuzk.cz/ruian/).</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#ruian_okres">RÚIAN - District (ruian_okres)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -2027,7 +1916,7 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#dokument">Document (dokument)</a></td>
+                  <td><a href="#heslo">Vocabulary Term (heslo)</a></td>
                 </tr>
               </table>
             
@@ -2052,10 +1941,6 @@
                 <tr>
                   <td>Subclass of</td>
                   <td><a href="#archeologicky_zaznam">Archaeological Record (archeologicky_zaznam)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.lokalita">Protected Data – Site (chranene_udaje.lokalita)</a></td>
                 </tr>
               </table>
             
@@ -2138,14 +2023,6 @@
                 <tr>
                   <td>Definition</td>
                   <td>The spatial delineation of archaeological fieldwork in the AMCR is ensured by the obligatory relation of documentation units to one of the units of spatial identification. These units are called PIAN (Spatial Identification of Archaeological Finds). Each PIAN unit may have links to a larger number of archaeological records and vice versa.</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
-                  <td>Subclasses</td>
-                  <td><a href="#chranene_udaje.pian">Protected Data – Spatial Unit (chranene_udaje.pian)</a></td>
                 </tr>
               </table>
             
@@ -2236,10 +2113,6 @@
                   <td>Term Hierarchy (hierarchie)</td>
                 </tr>
                 <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
-                </tr>
-                <tr>
                   <td>Subclasses</td>
                   <td><a href="#hierarchie_vyse">Parent Term (hierarchie_vyse)</a>, <a href="#hierarchie_nize">Child Term (hierarchie_nize)</a></td>
                 </tr>
@@ -2295,10 +2168,6 @@
                   <td>Label</td>
                   <td>Unidentified Fieldwork Event (neident_akce)</td>
                 </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="#dokument_cast">Document Part (dokument_cast)</a></td>
-                </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
@@ -2326,7 +2195,7 @@
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#uzivatel.aktivni">Active account</a>, <a href="#uzivatel.admin">Administrator</a>, <a href="#uzivatel.datum_registrace">Date joined</a>, <a href="#uzivatel.email">Email</a>, <a href="#uzivatel.notifikace">Email notifications</a>, <a href="#uzivatel.prijmeni">Family name</a>, <a href="#uzivatel.jmeno">Given name</a>, <a href="#uzivatel.skupina">Groups</a>, <a href="#uzivatel.ident_cely">ID</a>, <a href="#isParticipantUserIn">is participant user in</a>, <a href="#uzivatel.jazyk">Language</a>, <a href="#uzivatel.orcid">ORCID</a>, <a href="#uzivatel.superadmin">Superadmin</a>, <a href="#uzivatel.telefon">Telephone</a>, <a href="#uzivatel.spoluprace_nadrizeni">user - collaboration manager</a>, <a href="#uzivatel.spoluprace_podrizeni">user - collaborator</a>, <a href="#uzivatel.historie">user - history</a>, <a href="#uzivatel.organizace">user - organisation</a>, <a href="#uzivatel.osoba">user - person</a>, <a href="#uzivatel.hlidaci_pes">user - project notification</a>.</p>
+                <p>For this class the following properties are defined: <a href="#uzivatel.aktivni">Active account</a>, <a href="#uzivatel.admin">Administrator</a>, <a href="#uzivatel.spoluprace_nadrizeni">collaborator - collaboration</a>, <a href="#uzivatel.datum_registrace">Date joined</a>, <a href="#uzivatel.email">Email</a>, <a href="#uzivatel.notifikace">Email notifications</a>, <a href="#uzivatel.prijmeni">Family name</a>, <a href="#uzivatel.jmeno">Given name</a>, <a href="#uzivatel.skupina">Groups</a>, <a href="#uzivatel.ident_cely">ID</a>, <a href="#uzivatel.jazyk">Language</a>, <a href="#uzivatel.spoluprace_podrizeni">manager - collaboration</a>, <a href="#uzivatel.orcid">ORCID</a>, <a href="#uzivatel.superadmin">Superadmin</a>, <a href="#uzivatel.telefon">Telephone</a>, <a href="#uzivatel.historie">user - history</a>, <a href="#uzivatel.organizace">user - organisation</a>, <a href="#uzivatel.osoba">user - person</a>, <a href="#uzivatel.hlidaci_pes">user - project notification</a>.</p>
             </section>            <section id="dohlednost">
               <h4>Visibility (dohlednost)</h4>
             
@@ -2363,16 +2232,16 @@
                 </tr>
                 <tr>
                   <td>Subclass of</td>
-                  <td><a href="#amcr">AMCR (amcr)</a></td>
+                  <td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
                 </tr>
                 <tr>
                   <td>Subclasses</td>
-                  <td><a href="#adb_podnet">Intervention Motivation (adb_podnet)</a>, <a href="#adb_typ">Trench Type (adb_typ)</a>, <a href="#akce_typ_kat">Fieldwork Event Type Category (akce_typ_kat)</a>, <a href="#aktivita">Activity (aktivita)</a>, <a href="#areal_kat">Activity Area Category (areal_kat)</a>, <a href="#datum_specifikace">Date Precision (datum_specifikace)</a>, <a href="#dohlednost">Visibility (dohlednost)</a>, <a href="#dok_jednotka_typ">Documentation Unit Type (dok_jednotka_typ)</a>, <a href="#dokument_format">Document Format (dokument_format)</a>, <a href="#dokument_licence">Licence (dokument_licence)</a>, <a href="#dokument_nahrada">Substitution for Original (dokument_nahrada)</a>, <a href="#dokument_rada">Document Series (dokument_rada)</a>, <a href="#dokument_ulozeni">Location of Original (dokument_ulozeni)</a>, <a href="#dokument_zachovalost">Document Preservation (dokument_zachovalost)</a>, <a href="#ext_zdroj_typ">External Source Type (ext_zdroj_typ)</a>, <a href="#jazyk">Language (jazyk)</a>, <a href="#jistota_urceni">Level of Confidence (jistota_urceni)</a>, <a href="#letfoto_tvar">Documented Shape (letfoto_tvar)</a>, <a href="#letiste">Airport (letiste)</a>, <a href="#lokalita_typ">Site Type (lokalita_typ)</a>, <a href="#nalez_typ">Find Type (nalez_typ)</a>, <a href="#nalezove_okolnosti">Discovery Context (nalezove_okolnosti)</a>, <a href="#obdobi_kat">Period Category (obdobi_kat)</a>, <a href="#organizace_typ">Organisation Type (organizace_typ)</a>, <a href="#pamatkova_ochrana">Monument Protection (pamatkova_ochrana)</a>, <a href="#pian_presnost">Spatial Unit Accuracy (pian_presnost)</a>, <a href="#pian_typ">Spatial Unit Type (pian_typ)</a>, <a href="#pocasi">Weather (pocasi)</a>, <a href="#posudek_typ_kat">Analysis Type Category (posudek_typ_kat)</a>, <a href="#pristupnost">Accessibility (pristupnost)</a>, <a href="#projekt_typ">Project Type (projekt_typ)</a>, <a href="#stav_dochovani">State of Preservation (stav_dochovani)</a>, <a href="#udalost_typ">Type of Documented Event (udalost_typ)</a>, <a href="#vyskovy_bod_typ">Elevation Point Type (vyskovy_bod_typ)</a>, <a href="#zeme">Country (zeme)</a>, <a href="#dokument_material">Document Material (dokument_material)</a>, <a href="#dokument_typ">Document Type (dokument_typ)</a>, <a href="#odkaz">Mapping (odkaz)</a></td>
+                  <td><a href="#aktivita">Activity (aktivita)</a>, <a href="#dohlednost">Visibility (dohlednost)</a>, <a href="#letfoto_tvar">Documented Shape (letfoto_tvar)</a>, <a href="#dokument_format">Document Format (dokument_format)</a>, <a href="#jazyk">Language (jazyk)</a>, <a href="#jistota_urceni">Level of Confidence (jistota_urceni)</a>, <a href="#areal_kat">Activity Area Category (areal_kat)</a>, <a href="#obdobi_kat">Period Category (obdobi_kat)</a>, <a href="#objekt_druh_kat">Feature Category (objekt_druh_kat)</a>, <a href="#predmet_druh_kat">Object Category (predmet_druh_kat)</a>, <a href="#akce_typ_kat">Fieldwork Event Type Category (akce_typ_kat)</a>, <a href="#posudek_typ_kat">Analysis Type Category (posudek_typ_kat)</a>, <a href="#letiste">Airport (letiste)</a>, <a href="#dokument_licence">Licence (dokument_licence)</a>, <a href="#dokument_material">Document Material (dokument_material)</a>, <a href="#predmet_specifikace">Object Material (predmet_specifikace)</a>, <a href="#dokument_nahrada">Substitution for Original (dokument_nahrada)</a>, <a href="#nalezove_okolnosti">Discovery Context (nalezove_okolnosti)</a>, <a href="#pamatkova_ochrana">Monument Protection (pamatkova_ochrana)</a>, <a href="#pocasi">Weather (pocasi)</a>, <a href="#adb_podnet">Intervention Motivation (adb_podnet)</a>, <a href="#datum_specifikace">Date Precision (datum_specifikace)</a>, <a href="#pian_presnost">Spatial Unit Accuracy (pian_presnost)</a>, <a href="#pristupnost">Accessibility (pristupnost)</a>, <a href="#dokument_rada">Document Series (dokument_rada)</a>, <a href="#stav_dochovani">State of Preservation (stav_dochovani)</a>, <a href="#tvar">Shape (tvar)</a>, <a href="#dok_jednotka_typ">Documentation Unit Type (dok_jednotka_typ)</a>, <a href="#udalost_typ">Type of Documented Event (udalost_typ)</a>, <a href="#dokument_typ">Document Type (dokument_typ)</a>, <a href="#ext_zdroj_typ">External Source Type (ext_zdroj_typ)</a>, <a href="#lokalita_typ">Site Type (lokalita_typ)</a>, <a href="#nalez_typ">Find Type (nalez_typ)</a>, <a href="#organizace_typ">Organisation Type (organizace_typ)</a>, <a href="#pian_typ">Spatial Unit Type (pian_typ)</a>, <a href="#projekt_typ">Project Type (projekt_typ)</a>, <a href="#adb_typ">Trench Type (adb_typ)</a>, <a href="#vyskovy_bod_typ">Elevation Point Type (vyskovy_bod_typ)</a>, <a href="#dokument_ulozeni">Location of Original (dokument_ulozeni)</a>, <a href="#dokument_zachovalost">Document Preservation (dokument_zachovalost)</a>, <a href="#zeme">Country (zeme)</a></td>
                 </tr>
               </table>
             
                 <p><strong>Properties</strong></p>
-                <p>For this class the following properties are defined: <a href="#heslo.zkratka">Abbreviation</a>, <a href="#heslo.popis">Description (CS)</a>, <a href="#heslo.popis_en">Description (EN)</a>, <a href="#heslo.ident_cely">ID</a>, <a href="#isSubjectOf">is subject of</a>, <a href="#heslo.razeni">Ordering</a>, <a href="#heslo.heslo">Term</a>, <a href="#heslo.heslo_en">Term (EN)</a>, <a href="#heslo.hierarchie_nize">vocabulary term - child term</a>, <a href="#heslo.odkaz">vocabulary term - mapping</a>, <a href="#heslo.hierarchie_vyse">vocabulary term - parent term</a>, <a href="#heslo.nazev_heslare">Vocabulary title</a>.</p>
+                <p>For this class the following properties are defined: <a href="#heslo.zkratka">Abbreviation</a>, <a href="#heslo.popis">Description (CS)</a>, <a href="#heslo.popis_en">Description (EN)</a>, <a href="#heslo.ident_cely">ID</a>, <a href="#heslo.razeni">Ordering</a>, <a href="#heslo.heslo">Term</a>, <a href="#heslo.heslo_en">Term (EN)</a>, <a href="#heslo.hierarchie_nize">vocabulary term - child term</a>, <a href="#heslo.odkaz">vocabulary term - mapping</a>, <a href="#heslo.hierarchie_vyse">vocabulary term - parent term</a>, <a href="#heslo.nazev_heslare">Vocabulary title</a>.</p>
             </section>            <section id="pocasi">
               <h4>Weather (pocasi)</h4>
             
@@ -2515,7 +2384,41 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
+                  </tr>
+              </table>
+            
+            </section>            <section id="vedouci_akce_ostatni.vedouci">
+              <h4>additional fieldwork manager - person</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.vedouci">https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.vedouci</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>additional fieldwork manager - person</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#vedouci_akce_ostatni">Additional Fieldwork Manager (vedouci_akce_ostatni)</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#osoba">Person (osoba)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Subproperty of</td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -2699,7 +2602,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2733,7 +2636,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2767,7 +2670,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2801,7 +2704,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2835,7 +2738,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#dataset">dataset</a></td>
                   </tr>
               </table>
             
@@ -2869,7 +2772,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2903,7 +2806,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2937,7 +2840,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -2971,7 +2874,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3005,7 +2908,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3039,7 +2942,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3073,7 +2976,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3107,7 +3010,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3141,7 +3044,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3175,7 +3078,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#resource">resource</a></td>
                   </tr>
               </table>
             
@@ -3239,7 +3142,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -3273,7 +3176,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasCreator">has creator</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -3307,7 +3210,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -3341,7 +3244,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPropertyOf">is property of</a></td>
+                    <td><a href="http://purl.org/dc/terms/relation">Relation</a></td>
                   </tr>
               </table>
             
@@ -3375,7 +3278,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -3409,7 +3312,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -3443,7 +3346,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -3470,14 +3373,14 @@
                 <tr>
                   <td>Range</td>
                   <td>
-                    <a href="#adb_typ">Trench Type (adb_typ)</a>
+                    <a href="#heslo">Vocabulary Term (heslo)</a>
             
                     
                   </td>
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -3511,7 +3414,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -3542,10 +3445,6 @@
             
                     
                   </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
                   </tr>
               </table>
             
@@ -3579,7 +3478,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isDocumentedBy">is documented by</a></td>
+                    <td><a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a></td>
                   </tr>
               </table>
             
@@ -3613,7 +3512,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -3647,7 +3546,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasReference">has reference</a></td>
+                    <td><a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a></td>
                   </tr>
               </table>
             
@@ -3681,7 +3580,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -3715,7 +3614,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -3749,12 +3648,12 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
             </section>            <section id="archeologicky_zaznam.dalsi_katastr">
-              <h4>archaeological record - other cadastral areas</h4>
+              <h4>archaeological record - other cadastral area</h4>
             
               <table class="def">
                 <tr>
@@ -3763,7 +3662,7 @@
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>archaeological record - other cadastral areas</td>
+                  <td>archaeological record - other cadastral area</td>
                 </tr>
                 <tr>
                   <td>Domain</td>
@@ -3783,7 +3682,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -3817,7 +3716,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -3851,7 +3750,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -3915,7 +3814,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -4189,7 +4088,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -4223,7 +4122,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a>, <a href="#isSpatialDefinitionOf">is spatial definition of</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -4347,7 +4246,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#broader">has broader</a></td>
                   </tr>
               </table>
             
@@ -4441,7 +4340,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantingUser">has participant user</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -4475,7 +4374,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -4509,7 +4408,41 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantingUser">has participant user</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
+                  </tr>
+              </table>
+            
+            </section>            <section id="uzivatel.spoluprace_nadrizeni">
+              <h4>collaborator - collaboration</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://amcr.aiscr.cz/schema#uzivatel.spoluprace_nadrizeni">https://amcr.aiscr.cz/schema#uzivatel.spoluprace_nadrizeni</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>collaborator - collaboration</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#uzivatel">User (uzivatel)</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#spoluprace">Collaboration (spoluprace)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Subproperty of</td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -4573,7 +4506,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -4607,7 +4540,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -4641,7 +4574,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -4675,7 +4608,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -4709,7 +4642,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/temporal">Temporal Coverage</a></td>
                   </tr>
               </table>
             
@@ -5553,7 +5486,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -5587,12 +5520,12 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
             </section>            <section id="dokument.posudek">
-              <h4>document - analysis</h4>
+              <h4>document - analysis type</h4>
             
               <table class="def">
                 <tr>
@@ -5601,7 +5534,7 @@
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>document - analysis</td>
+                  <td>document - analysis type</td>
                 </tr>
                 <tr>
                   <td>Domain</td>
@@ -5621,7 +5554,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -5655,7 +5588,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasCreator">has creator</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -5689,7 +5622,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -5723,7 +5656,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -5757,7 +5690,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -5791,7 +5724,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -5825,7 +5758,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -5859,7 +5792,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#distribution">distribution</a></td>
                   </tr>
               </table>
             
@@ -5893,7 +5826,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -5927,7 +5860,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/format">Format</a></td>
                   </tr>
               </table>
             
@@ -5961,7 +5894,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -5995,7 +5928,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/language">Language</a></td>
                   </tr>
               </table>
             
@@ -6029,7 +5962,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/license">License</a></td>
                   </tr>
               </table>
             
@@ -6063,7 +5996,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accrualMethod">Accrual Method</a></td>
                   </tr>
               </table>
             
@@ -6097,7 +6030,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -6131,7 +6064,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/medium">Medium</a></td>
                   </tr>
               </table>
             
@@ -6165,7 +6098,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#inSeries">in series</a></td>
                   </tr>
               </table>
             
@@ -6199,7 +6132,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -6226,14 +6159,14 @@
                 <tr>
                   <td>Range</td>
                   <td>
-                    <a href="#dokument_nahrada">Substitution for Original (dokument_nahrada)</a>
+                    <a href="#heslo">Vocabulary Term (heslo)</a>
             
                     
                   </td>
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -6267,7 +6200,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -6301,7 +6234,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -6335,7 +6268,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#documents">documents</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -6369,7 +6302,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -6403,7 +6336,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#documents">documents</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -6437,41 +6370,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#documents">documents</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="heslo.dokument_typ_material_rada">
-              <h4>document series - document type, material and series</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#heslo.dokument_typ_material_rada">https://amcr.aiscr.cz/schema#heslo.dokument_typ_material_rada</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>document series - document type, material and series</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#dokument_rada">Document Series (dokument_rada)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#dokument_typ_material_rada">Document Type, Material and Series (dokument_typ_material_rada)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#isSubjectOf">is subject of</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -6505,7 +6404,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#related">has related</a></td>
                   </tr>
               </table>
             
@@ -6539,7 +6438,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#related">has related</a></td>
                   </tr>
               </table>
             
@@ -6603,7 +6502,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/relation">Relation</a></td>
                   </tr>
               </table>
             
@@ -6637,7 +6536,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -6671,7 +6570,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -6705,7 +6604,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -6736,82 +6635,6 @@
             
                     
                   </td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="documents">
-              <h4>documents</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#documents">https://amcr.aiscr.cz/schema#documents</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>documents</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#dokument">Document (dokument)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsDocumentedBy">documents / is documented by</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#dokument_cast.projekt">document part - project</a>, <a href="#dokument_cast.neident_akce">document part - unidentified fieldwork event</a>, <a href="#dokument_cast.archeologicky_zaznam">document part - archaeological record</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsDocumentedBy">
-              <h4>documents / is documented by</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#documents/IsDocumentedBy">https://amcr.aiscr.cz/schema#documents/IsDocumentedBy</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>documents / is documented by</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#isDocumentedBy">is documented by</a>, <a href="#documents">documents</a></td>
                   </tr>
               </table>
             
@@ -6935,7 +6758,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -7209,40 +7032,6 @@
                   </tr>
               </table>
             
-            </section>            <section id="ext_odkaz.ext_zdroj">
-              <h4>extenal reference - external source</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj">https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>extenal reference - external source</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#ext_odkaz">External Reference (ext_odkaz)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#ext_zdroj">External Source (ext_zdroj)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
-                  </tr>
-              </table>
-            
             </section>            <section id="ext_odkaz.archeologicky_zaznam">
               <h4>external reference - archaeological record</h4>
             
@@ -7273,7 +7062,41 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isReferencedBy">is referenced by</a></td>
+                    <td><a href="http://purl.org/dc/terms/references">References</a></td>
+                  </tr>
+              </table>
+            
+            </section>            <section id="ext_odkaz.ext_zdroj">
+              <h4>external reference - external source</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj">https://amcr.aiscr.cz/schema#ext_odkaz.ext_zdroj</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>external reference - external source</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#ext_odkaz">External Reference (ext_odkaz)</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#ext_zdroj">External Source (ext_zdroj)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Subproperty of</td>
+                    <td><a href="http://purl.org/dc/terms/source">Source</a></td>
                   </tr>
               </table>
             
@@ -7307,7 +7130,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasCreator">has creator</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -7341,7 +7164,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -7375,7 +7198,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasCreator">has creator</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -7409,7 +7232,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a></td>
                   </tr>
               </table>
             
@@ -7443,7 +7266,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -7477,7 +7300,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -7571,7 +7394,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -7605,7 +7428,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -7640,7 +7463,7 @@
               </table>
             
             </section>            <section id="akce.vedouci_akce_ostatni">
-              <h4>fieldwork event - additional manager</h4>
+              <h4>fieldwork event - additional fieldwork manager</h4>
             
               <table class="def">
                 <tr>
@@ -7649,7 +7472,7 @@
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>fieldwork event - additional manager</td>
+                  <td>fieldwork event - additional fieldwork manager</td>
                 </tr>
                 <tr>
                   <td>Domain</td>
@@ -7669,41 +7492,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="vedouci_akce_ostatni.vedouci">
-              <h4>fieldwork event - additional manager</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.vedouci">https://amcr.aiscr.cz/schema#vedouci_akce_ostatni.vedouci</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>fieldwork event - additional manager</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#vedouci_akce_ostatni">Additional Fieldwork Manager (vedouci_akce_ostatni)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#osoba">Person (osoba)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -7730,14 +7519,14 @@
                 <tr>
                   <td>Range</td>
                   <td>
-                    <a href="#datum_specifikace">Date Precision (datum_specifikace)</a>
+                    <a href="#heslo">Vocabulary Term (heslo)</a>
             
                     
                   </td>
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -7771,7 +7560,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -7805,7 +7594,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -7839,7 +7628,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -7873,7 +7662,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -7907,7 +7696,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -7941,7 +7730,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -8005,7 +7794,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -8099,7 +7888,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -8133,7 +7922,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -8167,7 +7956,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isDocumentedBy">is documented by</a></td>
+                    <td><a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a></td>
                   </tr>
               </table>
             
@@ -8201,7 +7990,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -8235,7 +8024,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -8269,7 +8058,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -8303,7 +8092,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -8697,724 +8486,6 @@
                   </tr>
               </table>
             
-            </section>            <section id="hasCreator">
-              <h4>has creator</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasCreator">https://amcr.aiscr.cz/schema#hasCreator</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has creator</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#osoba">Person (osoba)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsCreatorOf">has creator / is creator of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#dokument.autor">document - author</a>, <a href="#ext_zdroj.autor">external source - author</a>, <a href="#adb.autor_popisu">archaeological documentation point - author of description</a>, <a href="#ext_zdroj.editor">external source - editor</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsCreatorOf">
-              <h4>has creator / is creator of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasCreator/IsCreatorOf">https://amcr.aiscr.cz/schema#hasCreator/IsCreatorOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has creator / is creator of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantPersonIn">has participant person / is participant person in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasCreator">has creator</a>, <a href="#isCreatorOf">is creator of</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasPart">
-              <h4>has part</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasPart">https://amcr.aiscr.cz/schema#hasPart</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has part</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPartOf">has part / is part of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#dokument.dokument_cast">document - document part</a>, <a href="#archeologicky_zaznam.dokumentacni_jednotka">archaeological record - documentation unit</a>, <a href="#ext_zdroj.ext_odkaz">external source - external reference</a>, <a href="#amcr.ext_zdroj">AMCR - external source</a>, <a href="#komponenta.nalez_objekt">component - feature</a>, <a href="#dokument.soubor">document - file</a>, <a href="#amcr.let">AMCR - flight</a>, <a href="#amcr.samostatny_nalez">AMCR - individual find</a>, <a href="#projekt.samostatny_nalez">project - individual find</a>, <a href="#komponenta.nalez_predmet">component - object</a>, <a href="#amcr.organizace">AMCR - organisation</a>, <a href="#amcr.osoba">AMCR - person</a>, <a href="#amcr.projekt">AMCR - project</a>, <a href="#amcr.ruian_kraj">AMCR - region</a>, <a href="#amcr.pian">AMCR - spatial unit</a>, <a href="#amcr.uzivatel">AMCR - user</a>, <a href="#amcr.heslo">AMCR - vocabulary term</a>, <a href="#amcr.adb">AMCR - archaeological documentation point</a>, <a href="#projekt.archeologicky_zaznam">project - archaeological record</a>, <a href="#amcr.archeologicky_zaznam">AMCR - archaeological record</a>, <a href="#dokumentacni_jednotka.komponenta">documentation unit - component</a>, <a href="#dokument_cast.komponenta">document part - component</a>, <a href="#amcr.ruian_okres">AMCR - district</a>, <a href="#amcr.dokument">AMCR - document</a>, <a href="#amcr.ruian_katastr">AMCR - cadastral area</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsPartOf">
-              <h4>has part / is part of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasPart/IsPartOf">https://amcr.aiscr.cz/schema#hasPart/IsPartOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has part / is part of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasPart">has part</a>, <a href="#isPartOf">is part of</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsParticipantIn">
-              <h4>has participant / is participant in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipant/IsParticipantIn">https://amcr.aiscr.cz/schema#hasParticipant/IsParticipantIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant / is participant in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#IsParticipantOrganisationIn">has participant organisation / is participant organisation in</a>, <a href="#IsParticipantPersonIn">has participant person / is participant person in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasParticipantOrganisation">
-              <h4>has participant organisation</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantOrganisation">https://amcr.aiscr.cz/schema#hasParticipantOrganisation</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant organisation</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#organizace">Organisation (organizace)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantOrganisationIn">has participant organisation / is participant organisation in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#samostatny_nalez.predano_organizace">individual find - organisation</a>, <a href="#let.organizace">flight - organisation</a>, <a href="#projekt.organizace">project - organisation</a>, <a href="#dokument.organizace">document - organisation</a>, <a href="#akce.organizace">fieldwork event - organisation</a>, <a href="#vedouci_akce_ostatni.organizace">additional fieldwork manager - organisation</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsParticipantOrganisationIn">
-              <h4>has participant organisation / is participant organisation in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantOrganisation/IsParticipantOrganisationIn">https://amcr.aiscr.cz/schema#hasParticipantOrganisation/IsParticipantOrganisationIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant organisation / is participant organisation in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantIn">has participant / is participant in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a>, <a href="#isParticipantOrganisationIn">is participant organisation in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasParticipantPerson">
-              <h4>has participant person</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantPerson">https://amcr.aiscr.cz/schema#hasParticipantPerson</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant person</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#osoba">Person (osoba)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantPersonIn">has participant person / is participant person in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#dokument.osoba">document - documented person</a>, <a href="#samostatny_nalez.nalezce">individual find - finder</a>, <a href="#akce.hlavni_vedouci">fieldwork event - manager</a>, <a href="#vedouci_akce_ostatni.vedouci">fieldwork event - additional manager</a>, <a href="#neident_akce.vedouci">unidentified fieldwork event - manager</a>, <a href="#let.pozorovatel">flight - observer</a>, <a href="#projekt.vedouci_projektu">project - manager</a>, <a href="#adb.autor_revize">archaeological documentation point - author of revision</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsParticipantPersonIn">
-              <h4>has participant person / is participant person in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantPerson/IsParticipantPersonIn">https://amcr.aiscr.cz/schema#hasParticipantPerson/IsParticipantPersonIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant person / is participant person in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantIn">has participant / is participant in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#IsCreatorOf">has creator / is creator of</a>, <a href="#IsParticipantUserIn">has participant user / is participant user in</a>, <a href="#hasParticipantPerson">has participant person</a>, <a href="#isParticipantPersonIn">is participant person in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasParticipantingUser">
-              <h4>has participant user</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantingUser">https://amcr.aiscr.cz/schema#hasParticipantingUser</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant user</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#uzivatel">User (uzivatel)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantUserIn">has participant user / is participant user in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#spoluprace_podrizeni.spolupracovnik">collaboration - collaborator</a>, <a href="#spoluprace_nadrizeni.vedouci">collaboration - manager</a>, <a href="#historie.uzivatel">history - user</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsParticipantUserIn">
-              <h4>has participant user / is participant user in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasParticipantUser/IsParticipantUserIn">https://amcr.aiscr.cz/schema#hasParticipantUser/IsParticipantUserIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has participant user / is participant user in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantPersonIn">has participant person / is participant person in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasParticipantingUser">has participant user</a>, <a href="#isParticipantUserIn">is participant user in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasProperty">
-              <h4>has property</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasProperty">https://amcr.aiscr.cz/schema#hasProperty</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has property</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#akce.vedouci_akce_ostatni">fieldwork event - additional manager</a>, <a href="#projekt.oznamovatel">project - announcer</a>, <a href="#heslo.datace">period - dating</a>, <a href="#dokument.extra_data">document - extended description</a>, <a href="#archeologicky_zaznam.akce">archaeological record - fieldwork event</a>, <a href="#dokument.let">document - flight</a>, <a href="#archeologicky_zaznam.historie">archaeological record - history</a>, <a href="#projekt.historie">project - history</a>, <a href="#dokument.historie">document - history</a>, <a href="#ext_zdroj.historie">external source - history</a>, <a href="#samostatny_nalez.historie">individual find - history</a>, <a href="#pian.historie">spatial unit - history</a>, <a href="#spoluprace.historie">collaboration - history</a>, <a href="#soubor.historie">file - history</a>, <a href="#uzivatel.historie">user - history</a>, <a href="#uzivatel.osoba">user - person</a>, <a href="#autor.osoba">author - person</a>, <a href="#archeologicky_zaznam.chranene_udaje">archaeological record - protected data</a>, <a href="#adb.chranene_udaje">archaeological documentation point - protected data</a>, <a href="#projekt.chranene_udaje">project - protected data</a>, <a href="#pian.chranene_udaje">spatial unit - protected data</a>, <a href="#samostatny_nalez.chranene_udaje">individual find - protected data</a>, <a href="#akce.chranene_udaje">fieldwork event - protected data</a>, <a href="#lokalita.chranene_udaje">site - protected data</a>, <a href="#dokument.tvar">document - documented shape</a>, <a href="#archeologicky_zaznam.lokalita">archaeological record - site</a>, <a href="#uzivatel.organizace">user - organisation</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsPropertyOf">
-              <h4>has property / is property of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasProperty/IsPropertyOf">https://amcr.aiscr.cz/schema#hasProperty/IsPropertyOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has property / is property of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasProperty">has property</a>, <a href="#IsParticipantIn">has participant / is participant in</a>, <a href="#IsPartOf">has part / is part of</a>, <a href="#IsReferenceOf">has reference / is reference of</a>, <a href="#IsSpatialDefinitionOf">has spatial definition / is spatial definition of</a>, <a href="#IsSubjectOf">has subject / is subject of</a>, <a href="#isPropertyOf">is property of</a>, <a href="#IsDocumentedBy">documents / is documented by</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasReference">
-              <h4>has reference</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasReference">https://amcr.aiscr.cz/schema#hasReference</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has reference</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsReferenceOf">has reference / is reference of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#archeologicky_zaznam.ext_odkaz">archaeological record - external reference</a>, <a href="#heslo.odkaz">vocabulary term - mapping</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsReferenceOf">
-              <h4>has reference / is reference of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasReference/IsReferenceOf">https://amcr.aiscr.cz/schema#hasReference/IsReferenceOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has reference / is reference of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasReference">has reference</a>, <a href="#isReferencedBy">is referenced by</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasSpatialDefinition">
-              <h4>has spatial definition</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasSpatialDefinition">https://amcr.aiscr.cz/schema#hasSpatialDefinition</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has spatial definition</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsSpatialDefinitionOf">has spatial definition / is spatial definition of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hlidaci_pes.katastr">project notification - cadastral area</a>, <a href="#neident_akce.katastr">unidentified fieldwork event - cadastral area</a>, <a href="#samostatny_nalez.katastr">individual find - cadastral area</a>, <a href="#archeologicky_zaznam.okres">archaeological record - district</a>, <a href="#projekt.okres">project - district</a>, <a href="#samostatny_nalez.okres">individual find - district</a>, <a href="#hlidaci_pes.okres">project notification - district</a>, <a href="#neident_akce.okres">unidentified fieldwork event - district</a>, <a href="#adb.vyskovy_bod">archaeological documentation point - elevation point</a>, <a href="#projekt.hlavni_katastr">project - main cadastral area</a>, <a href="#archeologicky_zaznam.hlavni_katastr">archaeological record - main cadastral area</a>, <a href="#projekt.dalsi_katastr">project - other cadastral areas</a>, <a href="#archeologicky_zaznam.dalsi_katastr">archaeological record - other cadastral areas</a>, <a href="#hlidaci_pes.kraj">project notification - region</a>, <a href="#ruian_katastr.pian">cadastral area - spatial unit</a>, <a href="#dokumentacni_jednotka.pian">documentation unit - spatial unit</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsSpatialDefinitionOf">
-              <h4>has spatial definition / is spatial definition of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasSpatialDefinition/IsSpatialDefinitionOf">https://amcr.aiscr.cz/schema#hasSpatialDefinition/IsSpatialDefinitionOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has spatial definition / is spatial definition of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a>, <a href="#isSpatialDefinitionOf">is spatial definition of</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="hasSubject">
-              <h4>has subject</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasSubject">https://amcr.aiscr.cz/schema#hasSubject</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has subject</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#heslo">Vocabulary Term (heslo)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsSubjectOf">has subject / is subject of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#archeologicky_zaznam.pristupnost">archaeological record - accessibility</a>, <a href="#adb.pristupnost_pom">archaeological documentation point - accessibility</a>, <a href="#projekt.pristupnost_pom">project - accessibility</a>, <a href="#dokument.pristupnost">document - accessibility</a>, <a href="#pian.pristupnost_pom">spatial unit - accessibility</a>, <a href="#samostatny_nalez.pristupnost">individual find - accessibility</a>, <a href="#organizace.zverejneni_pristupnost">organisation - accessibility</a>, <a href="#komponenta.areal">component - activity area</a>, <a href="#pian.presnost">spatial unit - accuracy</a>, <a href="#komponenta.aktivita">component - activity</a>, <a href="#dokument.posudek">document - analysis</a>, <a href="#samostatny_nalez.okolnosti">individual find - context</a>, <a href="#extra_data.zeme">document - country</a>, <a href="#akce.specifikace_data">fieldwork event - date precision</a>, <a href="#let.letiste_start">flight - departure airport</a>, <a href="#let.letiste_cil">flight - destination airport</a>, <a href="#dokument_typ_material_rada.dokument_material">document type, material and series - document material</a>, <a href="#dokument.typ_dokumentu">document - type</a>, <a href="#ext_zdroj.typ_dokumentu">external source - document type</a>, <a href="#dokument_typ_material_rada.dokument_typ">document type, material and series - document type</a>, <a href="#vyskovy_bod.typ">elevation point - documented level</a>, <a href="#extra_data.format">document - format</a>, <a href="#hierarchie_nize.heslo_podrazene">child term - vocabulary term</a>, <a href="#adb.podnet">archaeological documentation point - intervention motivation</a>, <a href="#dokument.jazyk_dokumentu">document - language</a>, <a href="#lokalita.jistota">site - level of confidence</a>, <a href="#dokument.licence">document - licence</a>, <a href="#dokument.ulozeni_originalu">document - location of original</a>, <a href="#akce.hlavni_typ">fieldwork event - main type</a>, <a href="#samostatny_nalez.specifikace">individual find - material</a>, <a href="#nalez_predmet.specifikace">object - material</a>, <a href="#projekt.kulturni_pamatka">project - monument protection</a>, <a href="#dokument.material_originalu">document - original material</a>, <a href="#samostatny_nalez.obdobi">individual find - period</a>, <a href="#komponenta.obdobi">component - period</a>, <a href="#akce.vedlejsi_typ">fieldwork event - secondary type</a>, <a href="#dokument.rada">document - series</a>, <a href="#lokalita.druh">site - class</a>, <a href="#pian.typ">spatial unit - type</a>, <a href="#nalez_objekt.specifikace">feature - specification</a>, <a href="#lokalita.zachovalost">site - state of preservation</a>, <a href="#extra_data.zachovalost">document - state of preservation</a>, <a href="#extra_data.nahrada">document - substitution for original</a>, <a href="#adb.typ_sondy">archaeological documentation point - trench type</a>, <a href="#projekt.typ_projektu">project - type</a>, <a href="#ext_zdroj.typ">external source - type</a>, <a href="#samostatny_nalez.druh_nalezu">individual find - type</a>, <a href="#lokalita.typ_lokality">site - type</a>, <a href="#organizace.:typ_organizace">organisation - type</a>, <a href="#nalez_predmet.druh">object - type</a>, <a href="#nalez_objekt.druh">feature - type</a>, <a href="#dokumentacni_jednotka.typ">documentation unit - type</a>, <a href="#extra_data.udalost_typ">document - type of documented event</a>, <a href="#let.dohlednost">flight - visibility</a>, <a href="#let.pocasi">flight - weather</a>, <a href="#heslo.hierarchie_nize">vocabulary term - child term</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="IsSubjectOf">
-              <h4>has subject / is subject of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#hasSubject/IsSubjectOf">https://amcr.aiscr.cz/schema#hasSubject/IsSubjectOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has subject / is subject of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#hasSubject">has subject</a>, <a href="#isSubjectOf">is subject of</a></td>
-                  </tr>
-              </table>
-            
             </section>            <section id="historie.uzivatel">
               <h4>history - user</h4>
             
@@ -9445,7 +8516,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantingUser">has participant user</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -10477,7 +9548,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -10511,7 +9582,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -10545,7 +9616,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -10579,7 +9650,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -10613,7 +9684,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isDocumentedBy">is documented by</a></td>
+                    <td><a href="http://purl.org/dc/terms/isFormatOf">Is Format Of</a></td>
                   </tr>
               </table>
             
@@ -10647,7 +9718,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -10681,7 +9752,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -10715,7 +9786,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -10749,7 +9820,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -10783,7 +9854,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/temporal">Temporal Coverage</a></td>
                   </tr>
               </table>
             
@@ -10817,7 +9888,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -10851,7 +9922,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -10885,7 +9956,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -10946,374 +10017,6 @@
             
                     
                   </td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isCreatorOf">
-              <h4>is creator of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isCreatorOf">https://amcr.aiscr.cz/schema#isCreatorOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is creator of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#osoba">Person (osoba)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsCreatorOf">has creator / is creator of</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isDocumentedBy">
-              <h4>is documented by</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isDocumentedBy">https://amcr.aiscr.cz/schema#isDocumentedBy</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is documented by</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#dokument">Document (dokument)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsDocumentedBy">documents / is documented by</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#projekt.dokument">project - document</a>, <a href="#archeologicky_zaznam.dokument">archaeological record - document</a>, <a href="#let.dokument">flight - document</a>, <a href="#projekt.soubor">project - file</a>, <a href="#samostatny_nalez.soubor">individual find - file</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isPartOf">
-              <h4>is part of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isPartOf">https://amcr.aiscr.cz/schema#isPartOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is part of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPartOf">has part / is part of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#dokumentacni_jednotka.adb">documentation unit - archaeological documentation point</a>, <a href="#ruian_katastr.okres">cadastral area - district</a>, <a href="#ext_odkaz.ext_zdroj">extenal reference - external source</a>, <a href="#organizace.soucast">organisation - parent organisation</a>, <a href="#samostatny_nalez.projekt">individual find - project</a>, <a href="#akce.projekt">fieldwork event - project</a>, <a href="#ruian_okres.kraj">district - region</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isParticipantOrganisationIn">
-              <h4>is participant organisation in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isParticipantOrganisationIn">https://amcr.aiscr.cz/schema#isParticipantOrganisationIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is participant organisation in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#organizace">Organisation (organizace)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantOrganisationIn">has participant organisation / is participant organisation in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isParticipantPersonIn">
-              <h4>is participant person in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isParticipantPersonIn">https://amcr.aiscr.cz/schema#isParticipantPersonIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is participant person in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#osoba">Person (osoba)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantPersonIn">has participant person / is participant person in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isParticipantUserIn">
-              <h4>is participant user in</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isParticipantUserIn">https://amcr.aiscr.cz/schema#isParticipantUserIn</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is participant user in</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#uzivatel">User (uzivatel)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsParticipantUserIn">has participant user / is participant user in</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#uzivatel.spoluprace_nadrizeni">user - collaboration manager</a>, <a href="#uzivatel.spoluprace_podrizeni">user - collaborator</a>, <a href="#uzivatel.hlidaci_pes">user - project notification</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isPropertyOf">
-              <h4>is property of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isPropertyOf">https://amcr.aiscr.cz/schema#isPropertyOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is property of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsPropertyOf">has property / is property of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#adb.dokumentacni_jednotka">archaeological documentation point - documentation unit</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isReferencedBy">
-              <h4>is referenced by</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isReferencedBy">https://amcr.aiscr.cz/schema#isReferencedBy</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is referenced by</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsReferenceOf">has reference / is reference of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#ext_odkaz.archeologicky_zaznam">external reference - archaeological record</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isSpatialDefinitionOf">
-              <h4>is spatial definition of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isSpatialDefinitionOf">https://amcr.aiscr.cz/schema#isSpatialDefinitionOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is spatial definition of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsSpatialDefinitionOf">has spatial definition / is spatial definition of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#pian.dokumentacni_jednotka">spatial unit - documentation unit</a>, <a href="#ruian_katastr.pian">cadastral area - spatial unit</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="isSubjectOf">
-              <h4>is subject of</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#isSubjectOf">https://amcr.aiscr.cz/schema#isSubjectOf</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is subject of</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#heslo">Vocabulary Term (heslo)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#IsSubjectOf">has subject / is subject of</a></td>
-                  </tr>
-                  <tr>
-                    <td>Subproperties</td>
-                    <td><a href="#heslo.dokument_typ_material_rada">document series - document type, material and series</a>, <a href="#hierarchie_vyse.heslo_nadrazene">parent term - vocabulary term</a>, <a href="#tvar.tvar">shape - documented shape</a>, <a href="#heslo.hierarchie_vyse">vocabulary term - parent term</a></td>
                   </tr>
               </table>
             
@@ -11674,6 +10377,40 @@
             
                     
                   </td>
+                  </tr>
+              </table>
+            
+            </section>            <section id="uzivatel.spoluprace_podrizeni">
+              <h4>manager - collaboration</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://amcr.aiscr.cz/schema#uzivatel.spoluprace_podrizeni">https://amcr.aiscr.cz/schema#uzivatel.spoluprace_podrizeni</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>manager - collaboration</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#uzivatel">User (uzivatel)</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#spoluprace">Collaboration (spoluprace)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Subproperty of</td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -12637,7 +11374,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -12671,7 +11408,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -12855,7 +11592,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -12889,7 +11626,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isPartOf">is part of</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -12923,7 +11660,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -13047,7 +11784,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isSubjectOf">is subject of</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#narrower">has narrower</a></td>
                   </tr>
               </table>
             
@@ -13111,7 +11848,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/temporal">Temporal Coverage</a></td>
                   </tr>
               </table>
             
@@ -13445,7 +12182,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -13479,7 +12216,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/relation">Relation</a></td>
                   </tr>
               </table>
             
@@ -13513,7 +12250,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -13547,7 +12284,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -13581,7 +12318,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isDocumentedBy">is documented by</a></td>
+                    <td><a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a></td>
                   </tr>
               </table>
             
@@ -13615,7 +12352,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isDocumentedBy">is documented by</a></td>
+                    <td><a href="http://purl.org/dc/terms/isFormatOf">Is Format Of</a></td>
                   </tr>
               </table>
             
@@ -13649,7 +12386,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -13683,7 +12420,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasPart">has part</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -13717,7 +12454,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -13751,7 +12488,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -13785,7 +12522,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -13819,7 +12556,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantOrganisation">has participant organisation</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -13853,7 +12590,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -13887,7 +12624,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -13921,7 +12658,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -13955,7 +12692,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -13989,7 +12726,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -14023,7 +12760,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -14477,6 +13214,40 @@
                   </tr>
               </table>
             
+            </section>            <section id="heslo.dokument_typ_material_rada">
+              <h4>series - document type, material and series</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://amcr.aiscr.cz/schema#heslo.dokument_typ_material_rada">https://amcr.aiscr.cz/schema#heslo.dokument_typ_material_rada</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>series - document type, material and series</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#dokument_rada">Document Series (dokument_rada)</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#dokument_typ_material_rada">Document Type, Material and Series (dokument_typ_material_rada)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Subproperty of</td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#related">has related</a></td>
+                  </tr>
+              </table>
+            
             </section>            <section id="tvar.tvar">
               <h4>shape - documented shape</h4>
             
@@ -14507,7 +13278,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isSubjectOf">is subject of</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -14541,7 +13312,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/subject">Subject</a></td>
                   </tr>
               </table>
             
@@ -14575,7 +13346,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -14609,7 +13380,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -14643,7 +13414,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -14677,7 +13448,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -14831,7 +13602,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
                   </tr>
               </table>
             
@@ -14865,7 +13636,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -14899,7 +13670,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isSpatialDefinitionOf">is spatial definition of</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -14933,7 +13704,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -14967,7 +13738,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/hasPart">Has Part</a></td>
                   </tr>
               </table>
             
@@ -15001,7 +13772,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://purl.org/dc/terms/type">Type</a></td>
                   </tr>
               </table>
             
@@ -15785,7 +14556,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -15819,7 +14590,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSpatialDefinition">has spatial definition</a></td>
+                    <td><a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a></td>
                   </tr>
               </table>
             
@@ -15853,7 +14624,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasParticipantPerson">has participant person</a></td>
+                    <td><a href="http://purl.org/dc/terms/contributor">Contributor</a></td>
                   </tr>
               </table>
             
@@ -15917,74 +14688,6 @@
                   </tr>
               </table>
             
-            </section>            <section id="uzivatel.spoluprace_nadrizeni">
-              <h4>user - collaboration manager</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#uzivatel.spoluprace_nadrizeni">https://amcr.aiscr.cz/schema#uzivatel.spoluprace_nadrizeni</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>user - collaboration manager</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#uzivatel">User (uzivatel)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#spoluprace">Collaboration (spoluprace)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#isParticipantUserIn">is participant user in</a></td>
-                  </tr>
-              </table>
-            
-            </section>            <section id="uzivatel.spoluprace_podrizeni">
-              <h4>user - collaborator</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://amcr.aiscr.cz/schema#uzivatel.spoluprace_podrizeni">https://amcr.aiscr.cz/schema#uzivatel.spoluprace_podrizeni</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>user - collaborator</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#uzivatel">User (uzivatel)</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#spoluprace">Collaboration (spoluprace)</a>
-            
-                    
-                  </td>
-                  </tr>
-                  <tr>
-                    <td>Subproperty of</td>
-                    <td><a href="#isParticipantUserIn">is participant user in</a></td>
-                  </tr>
-              </table>
-            
             </section>            <section id="uzivatel.historie">
               <h4>user - history</h4>
             
@@ -16015,7 +14718,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/provenance">Provenance</a></td>
                   </tr>
               </table>
             
@@ -16049,7 +14752,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a></td>
                   </tr>
               </table>
             
@@ -16083,7 +14786,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasProperty">has property</a></td>
+                    <td><a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a></td>
                   </tr>
               </table>
             
@@ -16117,7 +14820,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isParticipantUserIn">is participant user in</a></td>
+                    <td><a href="http://purl.org/dc/terms/creator">Creator</a></td>
                   </tr>
               </table>
             
@@ -16301,7 +15004,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasSubject">has subject</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#narrower">has narrower</a></td>
                   </tr>
               </table>
             
@@ -16335,7 +15038,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#hasReference">has reference</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#mappingRelation">is in mapping relation with</a></td>
                   </tr>
               </table>
             
@@ -16369,7 +15072,7 @@
                   </tr>
                   <tr>
                     <td>Subproperty of</td>
-                    <td><a href="#isSubjectOf">is subject of</a></td>
+                    <td><a href="http://www.w3.org/2004/02/skos/core#broader">has broader</a></td>
                   </tr>
               </table>
             
